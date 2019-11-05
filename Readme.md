@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Alisa Selezneva](https://up.htmlacademy.ru/adaptive/18/user/1099671).
-* Наставник: `Неизвестно`.
+* Наставник: [Irina Shasheva](https://htmlacademy.ru/profile/loyso)
 
 ---
 
