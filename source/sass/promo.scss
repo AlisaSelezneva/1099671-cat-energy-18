@@ -1,4 +1,18 @@
 // файл promo.scss
 .promo {
+  color: #ffffff;
   background-image: url("../img/index-background-mobile@1x.jpg");
+  background-color: #68b738;
+  background-repeat: no-repeat;
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.promo p {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
 }

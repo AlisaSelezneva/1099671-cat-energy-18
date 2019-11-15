@@ -1,10 +1,14 @@
 body {
+  color: #000000;
   font-family: 'Oswald', sans-serif;
   background-color: #ffffff;
 
 }
 
-// файл promo.scss
-.promo {
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
-}
+@import "promo.scss";
+@import "button.scss";
+@import "programs";
+@import "benefits";
+@import "page-footer";
+@import "social";
+@import "benefits";
