@@ -1,15 +1,30 @@
+.programs {
+  padding: 0px;
+  margin: 0px 0px 32px 0px;
+  outline: $temporarily; /*временная рамка*/
+}
+
+.programs__list {
+  @include intend();
+}
+
 .programs__item {
+  padding: 22px 36px 23px 22px;
   background-color: #f2f2f2;
+  list-style-type: none;
 }
 
 .programs__title {
+  @include intend();
   font-size: 24px;
+  font-weight: normal;
   line-height: 37px;
   text-transform: uppercase;
+  color: #111111;
 }
 
 .programs__description {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
 }
@@ -18,4 +33,6 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  text-decoration: none;
+  color: #111111;
 }

@@ -1,0 +1,7 @@
+$greencolor: #68b738;
+$temporarily: 2px solid red;
+
+@mixin indent($padding: 0px, $margin: 0px) {
+  padding: $padding;
+  margin: $margin;
+}

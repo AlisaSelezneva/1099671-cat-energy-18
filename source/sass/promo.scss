@@ -1,13 +1,19 @@
 // файл promo.scss
 .promo {
+  padding: 29px 20px 0px 20px;
+  margin: 0px 0px 22px 0px;
+  min-width: 320px;
+  min-height: 305px;
   color: #ffffff;
   background-image: url("../img/index-background-mobile@1x.jpg");
-  background-color: #68b738;
+  background-color: $greencolor;
   background-repeat: no-repeat;
+  outline: $temporarily; /*временная рамка*/
 }
 
 .promo__title {
   font-size: 36px;
+  font-weight: normal;
   line-height: 36px;
 }
 

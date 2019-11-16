@@ -1,1 +1,10 @@
-.button {background-color: #68b738;}
+.button {
+  padding: 14px 74px 11px 73px;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $greencolor;
+  border-style: none;
+}
