@@ -3,8 +3,8 @@
   line-height: 16px;
   color: $gray-light;
   text-decoration: none;
-}
 
-.copyright__text:active {
-  color: $gray-30;
+  &:active {
+    color: $gray-30;
+  }
 }

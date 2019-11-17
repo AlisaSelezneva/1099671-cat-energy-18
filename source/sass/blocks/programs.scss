@@ -30,8 +30,8 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $gray;
-}
 
-.programs__link:active {
-  color: $black-30;
+  &:active {
+    color: $black-30;
+  }
 }
