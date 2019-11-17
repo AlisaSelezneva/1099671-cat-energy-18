@@ -1,23 +1,22 @@
 // файл promo.scss
 .promo {
-  padding: 29px 20px 0px 20px;
-  margin: 0px 0px 22px 0px;
-  min-width: 320px;
-  min-height: 305px;
-  color: #ffffff;
+  padding: 29px 20px 0 20px;
+  margin: 0 0 22px 0;
+  text-align: center;
+  color: $white;
   background-image: url("../img/index-background-mobile@1x.jpg");
-  background-color: $greencolor;
+  background-color: $apple;
   background-repeat: no-repeat;
   outline: $temporarily; /*временная рамка*/
 }
 
 .promo__title {
   font-size: 36px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 36px;
 }
 
-.promo p {
+.promo__slogan {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;

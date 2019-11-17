@@ -1,23 +1,22 @@
 .benefits {
-  padding: 0px 27px 47px 20px;
-  margin: 0px 0px 42px 0px;
+  padding: 0 27px 47px 20px;
+  margin: 0 0 42px 0;
   outline: $temporarily; /*временная рамка*/
 }
 
 .benefits__list {
-  @include intend();
+  @include indent();
 }
 
 .benefits__item {
   font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  list-style-type: none;
+
+  @include listno();
 }
 
 .benefits__subtitle {
   font-size: 36px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 60px;
-  color: #111111;
+  color: $gray;
 }

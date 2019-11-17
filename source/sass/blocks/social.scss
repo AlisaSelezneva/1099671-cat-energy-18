@@ -1,0 +1,7 @@
+.social__list {
+  background-color: $gray-lighten;
+}
+
+.social__item {
+  @include listno();
+}
