@@ -1,20 +1,22 @@
 .programs {
-  @include listno($margin:0 0 32px 0,);
+  @include nolist();
+  margin: 0 0 32px 0;
   outline: $temporarily; /*временная рамка*/
 }
 
 .programs__list {
-  @include indent();
+  padding: 0;
+  margin: 0;
 }
 
 .programs__item {
-  @include listno($padding:22px 20px, $margin:0,);
-  @include indent();
   background-color: $gray-lighten;
 }
 
 .programs__title {
-  @include indent();
+  padding: 0;
+  margin: 0;
+  font-family: $additional-font;
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
@@ -27,6 +29,7 @@
 }
 
 .programs__link {
+  font-family: $additional-font;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
