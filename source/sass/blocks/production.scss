@@ -1,0 +1,22 @@
+.production {
+  padding: 31px 20px 25px 20px;
+  margin: 0;
+  outline: $temporarily; /*временная рамка*/
+}
+
+.catalog__subtitle {
+  @include subtitle();
+}
+
+.production__list {
+  @include nolist();
+}
+
+.production__title {
+  @include subtitle-production();
+}
+
+.production__table {
+  font-size: 12px;
+  line-height: 16px;
+}

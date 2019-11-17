@@ -1,0 +1,10 @@
+.page-footer {
+  padding: 31px 25px 31px 20px;
+  color: $gray-light;
+  background-color: $gray-lighten;
+  outline: $temporarily; /*временная рамка*/
+}
+
+.page-footer__copyright {
+  text-decoration: none;
+}

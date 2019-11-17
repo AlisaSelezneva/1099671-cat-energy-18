@@ -1,0 +1,15 @@
+.show-more {
+  padding: 27px 20px 25px 20px;
+  margin: 0;
+  outline: $temporarily; /*временная рамка*/
+}
+
+.show-more__title {
+  @include subtitle-production();
+  text-transform: uppercase;
+}
+
+.show-more__text {
+  font-size: 12px;
+  line-height: 16px;
+}

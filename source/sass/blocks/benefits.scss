@@ -1,0 +1,13 @@
+.benefits {
+  padding: 0 27px 47px 20px;
+  margin: 0 0 42px 0;
+  outline: $temporarily; /*временная рамка*/
+}
+
+.benefits__list {
+  @include nolist();
+}
+
+.benefits__subtitle {
+  @include subtitle();
+}
