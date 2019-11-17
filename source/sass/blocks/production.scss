@@ -8,10 +8,6 @@
   @include subtitle();
 }
 
-.page-catalog__subtitle {
-  @include visually-hidden();
-}
-
 .production__list {
   @include nolist();
 }
