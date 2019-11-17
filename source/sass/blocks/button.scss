@@ -18,12 +18,12 @@
   }
 
   &_gray {
-    color: $gray-light;
-    background-color: $gray-lighten;
+    color: $gray;
+    background-color: $gray-light;
 
     &:hover,
     &:focus {
-      background-color: $gray-lightest;
+      background-color: $gray-lighten;
     }
 
     &:active {
