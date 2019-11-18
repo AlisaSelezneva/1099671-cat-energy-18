@@ -9,7 +9,7 @@
 }
 
 .programs__item {
-  background-color: $gray-lighten;
+  background-color: $gray-light;
 }
 
 .programs__title {
@@ -20,7 +20,7 @@
   font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
-  color: $gray;
+  color: $gray-darken;
 }
 
 .programs__link {
@@ -29,9 +29,9 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  color: $gray;
-}
+  color: $gray-darken;
 
-.programs__link:active {
-  color: $black-30;
+  &:active {
+    color: $black-30;
+  }
 }
