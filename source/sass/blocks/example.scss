@@ -1,3 +1,36 @@
 .example {
+  padding: 33px 20px 39px 20px;
   outline: $temporarily; /*временная рамка*/
+  background-color: $gray-light;
+}
+
+.example__title {
+  margin: 0;
+  padding: 0;
+  @include subtitle();
+}
+
+.example__list {
+  @include nolist();
+}
+
+.example__value {
+  font-family: $additional-font;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $gray-darken;
+}
+
+.example__parametr {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example_cost {
+  font-family: $additional-font;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $gray-darken;
 }

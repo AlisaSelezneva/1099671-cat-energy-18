@@ -1,0 +1,14 @@
+.slider__list {
+  @include nolist();
+}
+
+.slider__toggle {
+  margin: 0;
+  padding: 0;
+  font-family: $additional-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $gray-darken;
+  border-style: none;
+  background-color: $gray-light;
+}
