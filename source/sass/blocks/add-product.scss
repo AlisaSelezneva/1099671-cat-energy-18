@@ -1,0 +1,22 @@
+.page-catalog__subtitle {
+  font-family: $additional-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $gray-darken;
+}
+
+.add-products__list {
+  @include nolist();
+}
+
+.add-products__name {
+  font-family: $additional-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $gray-darkest;
+}
+
+.add-product__value {
+  line-height: 14px;
+}

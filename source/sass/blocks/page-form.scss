@@ -1,0 +1,25 @@
+.page-form__title {
+  @include subtitle();
+  margin: 30px 43px 35px 22px;
+  padding: 0;
+}
+
+.page-form__text {
+  margin: 0 74px 39px 20px;
+  padding: 0;
+  font-family: $additional-font;
+  text-transform: uppercase;
+  color: $gray-darken;
+}
+
+.page-form__subtitle {
+  font-weight: 400;
+  color: $gray-darken;
+  text-transform: none;
+}
+
+.page-form__textarea {
+  font-family: $additional-font;
+  font-size: 16px;
+  text-transform: uppercase;
+}
