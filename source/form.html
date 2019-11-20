@@ -30,8 +30,10 @@
     </nav>
   </header>
   <main class="page-form">
-    <h1 class="page-form__title">Подбор программы</h1>
-    <p class="page-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+    <div class="page-form__wrapper">
+      <h1 class="page-form__title">Подбор программы</h1>
+      <p class="page-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+    </div>
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="form__group">
         <p class="form__field">
@@ -81,13 +83,13 @@
       </fieldset>
       <fieldset class="form__group">
         <h2 class="page-form__subtitle">Комментарий</h2>
-        <textarea class="page-form__textarea" id="text-field" rows="5" cols="30" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea class="form__textarea" id="text-field" rows="5" cols="30" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="form__group">
         <h2 class="page-form__subtitle">Дополнительно</h2>
         <ul class="form__list form__list--checkbox">
           <li class="form__item">
-            <input type="checkbox" name="sugarfree" value="" id="sugarfree-item" checked>
+            <input class="form__checkbox" type="checkbox" name="sugarfree" value="" id="sugarfree-item" checked>
             <label for="sugarfree-item">
               Сахарозаменитель
             </label>

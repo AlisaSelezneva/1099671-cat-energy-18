@@ -1,11 +1,16 @@
+.page-form__wrapper {
+  padding: 30px 20px 39px 20px;
+  margin: 0;
+}
+
 .page-form__title {
   @include subtitle();
-  margin: 30px 43px 35px 22px;
+  margin: 0;
   padding: 0;
 }
 
 .page-form__text {
-  margin: 0 74px 39px 20px;
+  margin: 0;
   padding: 0;
   font-family: $additional-font;
   text-transform: uppercase;
@@ -13,13 +18,9 @@
 }
 
 .page-form__subtitle {
+  font-size: 24px;
+  line-height: 24px;
   font-weight: 400;
   color: $gray-darken;
   text-transform: none;
-}
-
-.page-form__textarea {
-  font-family: $additional-font;
-  font-size: 16px;
-  text-transform: uppercase;
 }
