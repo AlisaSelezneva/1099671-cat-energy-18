@@ -1,7 +1,5 @@
 .social__list {
-  background-color: $gray-light;
-}
-
-.social__item {
   @include nolist();
+
+  background-color: $gray-light;
 }
