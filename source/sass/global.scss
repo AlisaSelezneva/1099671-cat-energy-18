@@ -10,6 +10,19 @@ body {
   background-color: $white;
 }
 
+@media (min-width: $tablet-width) {
+  body {
+    background-color: $white;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  body {
+    background-color: $white;
+  }
+}
+
 a {
   color: $gray;
   text-decoration: none;
