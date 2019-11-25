@@ -1,3 +1,10 @@
+.copyright {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-self: center;
+  }
+}
+
 .copyright__text {
   font-size: 16px;
   line-height: 16px;

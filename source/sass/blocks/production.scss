@@ -9,6 +9,7 @@
 
 .production__list {
   @include nolist();
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -19,6 +20,7 @@
   @media (min-width: $tablet-width) {
     width: 324px;
   }
+
   @media (min-width: $desktop-width) {
     width: 245px;
   }

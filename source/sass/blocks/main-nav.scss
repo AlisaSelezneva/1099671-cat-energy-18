@@ -1,36 +1,34 @@
 .main-nav {
-  /* Временно для сетки */
-  width: 320px;
+  min-width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-  .main-nav {
-    margin: 0;
-    width: auto;
+    display: flex;
   }
-
-  .main-nav__wrapper {
-     display: flex;
-     justify-content: space-between;
-     width: 565px;
-     margin: 0 auto;
-     outline: $temporarily; /*временная рамка*/
-   }
-
-   .main-nav__list {
-    width: 565px;
-    /* Временно для сетки */
-    min-height: 59px;
-
-    @include nolist();
-  }
- }
-
   @media (min-width: $desktop-width) {
-  .main-nav__wrapper {
-    width: 720px;
+    display: flex;
   }
- }
 }
+
 .main-nav__list {
+  width: 565px;
+
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   @include nolist();
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
