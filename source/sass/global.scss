@@ -1,5 +1,4 @@
 body {
-  min-width: 320px;
   padding: 0;
   margin: 0;
   font-family: "Arial", sans-serif;
@@ -8,19 +7,6 @@ body {
   line-height: 18px;
   color: $gray;
   background-color: $white;
-}
-
-@media (min-width: $tablet-width) {
-  body {
-    background-color: $white;
-  }
-}
-
-
-@media (min-width: $desktop-width) {
-  body {
-    background-color: $white;
-  }
 }
 
 a {
@@ -44,4 +30,15 @@ html {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }

@@ -1,6 +1,5 @@
 .production {
   padding: 31px 20px 25px 20px;
-  margin: 0;
   outline: $temporarily; /*временная рамка*/
 }
 
@@ -10,6 +9,19 @@
 
 .production__list {
   @include nolist();
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.production__item {
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .production__title {
