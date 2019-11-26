@@ -2,12 +2,40 @@
   padding: 0 27px 47px 20px;
   margin: 0 0 42px 0;
   outline: $temporarily; /*временная рамка*/
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .benefits__list {
   @include nolist();
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .benefits__subtitle {
   @include subtitle();
+}
+
+.benefits__item {
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    margin-bottom: 89px;
+  }
 }
