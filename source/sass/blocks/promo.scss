@@ -1,7 +1,6 @@
 // файл promo.scss
 .promo {
   padding: 29px 20px 0 20px;
-  margin: 0 0 22px 0;
   font-family: $additional-font;
   text-align: center;
   color: $white;
@@ -13,15 +12,9 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    min-height: 450px;
-    z-index: 100;
     background-image: none;
     background-color: $white;
     text-align: left;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
   }
 }
 
@@ -31,16 +24,7 @@
   line-height: 36px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     color: $gray-darken;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    position: absolute;
-    top: 100px;
-    left: 20;
-    z-index: 10;
   }
 }
 
@@ -50,26 +34,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     color: $gray-darken;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    position: absolute;
-    top: 180px;
-    left: 20;
-    z-index: 10;
-  }
-}
-
-.promo__button {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    position: absolute;
-    top: 250px;
-    left: 20;
-    z-index: 10;
   }
 }
 

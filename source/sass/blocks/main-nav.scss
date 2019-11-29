@@ -1,15 +1,10 @@
 .main-nav {
-  min-width: 320px;
-  margin: 0 auto;
-
   @media (min-width: $tablet-width) {
     display: flex;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
     align-items: flex-start;
-    min-height: 696px;
     background-color: $apple;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
@@ -18,14 +13,13 @@
 
 .main-nav__catalog {
   @media (min-width: $desktop-width) {
-    min-height: 77px;
     background-image: none;
     background-color: $white;
   }
 }
 
 .main-nav__list {
-  min-width: 565px;
+  @include nolist();
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -34,13 +28,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-around;
     margin-top: 0;
     padding-top: 27px;
   }
-
-  @include nolist();
 }
 
 .main-nav__toggle {

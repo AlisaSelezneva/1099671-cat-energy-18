@@ -1,6 +1,5 @@
 .programs {
   padding: 0;
-  margin: 0 0 32px 0;
   outline: $temporarily; /*временная рамка*/
 }
 
@@ -9,16 +8,26 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
   }
 }
 
 .programs__item {
+  padding: 22px 36px 22px 20px;
   background-color: $gray-light;
 
   @media (min-width: $tablet-width) {
-    width: 570px;
+    width: 100%;
+    padding: 80px 62px 62px 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 41px 56px 62px 53px;
   }
 }
 
