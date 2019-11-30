@@ -31,17 +31,15 @@
     @media (min-width: $tablet-width) {
       margin-right: 50px;
     }
-  }
 
-  &:nth-child(-n+3) {
     @media (min-width: $desktop-width) {
-      margin-right: 80px;
+      margin-right: 0;
     }
   }
 
-  &:nth-child(4n) {
+  &:not(:nth-child(4n)) {
     @media (min-width: $desktop-width) {
-      margin-right: 0;
+      margin-right: 80px;
     }
   }
 }

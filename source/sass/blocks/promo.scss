@@ -40,21 +40,12 @@
 
 .promo__image {
   @media (min-width: $tablet-width) {
-    display: flex;
-    top: 5px;
-    left: 0;
     width: 709px;
-    height: 609px;
+    height: auto;
     order: 2;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    position: relative;
-    top: -550px;
-    left: 320px;
     width: 552px;
-    height: 499px;
-    order: 2;
   }
 }

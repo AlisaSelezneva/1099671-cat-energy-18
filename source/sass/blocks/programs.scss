@@ -6,14 +6,9 @@
 .programs__list {
   @include nolist();
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-wrap: nowrap;
   }
 }
 
@@ -22,11 +17,12 @@
   background-color: $gray-light;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
     padding: 80px 62px 62px 55px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 570px;
+    margin-right: 80px;
     padding: 41px 56px 62px 53px;
   }
 }
