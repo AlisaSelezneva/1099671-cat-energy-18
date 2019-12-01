@@ -1,6 +1,4 @@
 .production {
-  padding: 31px 20px 25px 20px;
-  margin: 0;
   outline: $temporarily; /*временная рамка*/
 }
 
@@ -10,6 +8,40 @@
 
 .production__list {
   @include nolist();
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.production__item {
+  @media (min-width: $tablet-width) {
+    padding: 165px 37px 40px 39px;
+    margin-bottom: 92px;
+    width: 324px;
+    background-color: $gray-light;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+
+  &:nth-child(odd) {
+    @media (min-width: $tablet-width) {
+      margin-right: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 0;
+    }
+  }
+
+  &:not(:nth-child(4n)) {
+    @media (min-width: $desktop-width) {
+      margin-right: 80px;
+    }
+  }
 }
 
 .production__title {
@@ -19,4 +51,5 @@
 .production__table {
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
 }

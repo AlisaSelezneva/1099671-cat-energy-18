@@ -1,5 +1,6 @@
 .button {
-  min-width: 280px;
+  display: inline-block;
+  width: 280px;
   padding: 14px 15px 11px 15px;
   font-family: "Oswald", sans-serif;
   text-align: center;
@@ -29,5 +30,13 @@
     &:active {
       color: $gray-30;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
   }
 }
