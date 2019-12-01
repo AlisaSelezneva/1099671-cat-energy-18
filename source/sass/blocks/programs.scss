@@ -1,5 +1,4 @@
 .programs {
-  padding: 0;
   outline: $temporarily; /*временная рамка*/
 }
 
@@ -22,8 +21,13 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    margin-right: 80px;
     padding: 41px 56px 62px 53px;
+  }
+
+  &:nth-child(odd) {
+    @media (min-width: $desktop-width) {
+      margin-right: 80px;
+    }
   }
 }
 

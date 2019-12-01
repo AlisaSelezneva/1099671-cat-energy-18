@@ -1,5 +1,6 @@
 .page-footer {
-  padding: 31px 25px 31px 20px;
+  padding-top: 31px;
+  padding-bottom: 31px;
   color: $gray;
   background-color: $gray-light;
   outline: $temporarily; /*временная рамка*/
@@ -12,7 +13,7 @@
 .page-footer__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 }

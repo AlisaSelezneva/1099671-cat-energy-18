@@ -1,5 +1,4 @@
 .benefits {
-  padding: 0;
   outline: $temporarily; /*временная рамка*/
 }
 
@@ -23,20 +22,8 @@
 
 .benefits__item {
   @media (min-width: $tablet-width) {
-    width: 325px;
-    padding-right: 100px;
+    width: 298px;
+    padding-right: 67px;
     margin-bottom: 89px;
-  }
-
-  &:not(:nth-child(4n)) {
-    @media (min-width: $desktop-width) {
-      margin-right: 100;
-    }
-  }
-
-  &:nth-child(4n) {
-    @media (min-width: $desktop-width) {
-      margin-right: 0;
-    }
   }
 }
