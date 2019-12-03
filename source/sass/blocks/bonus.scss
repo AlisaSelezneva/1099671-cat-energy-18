@@ -1,4 +1,6 @@
 .bonus {
+  margin-top: 57px;
+  margin-bottom: 35px;
   padding: 65px 20px 43px 20px;
   min-width: 280px;
   min-height: 298px;
@@ -10,4 +12,10 @@
   background-color: $apple;
   background-repeat: no-repeat;
   outline: $temporarily; /*временная рамка*/
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 289px;
+    margin: 0;
+  }
 }
