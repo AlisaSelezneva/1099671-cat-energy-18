@@ -1,11 +1,18 @@
 .add-products {
+  outline: $temporarily; /*временная рамка*/
+
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
 .add-products__list {
   @include nolist();
+
+  @media (min-width: $desktop-width) {
+    padding-right: 40px;
+  }
 }
 
 .add-products__item {
@@ -36,8 +43,7 @@
   color: $gray-darkest;
 
   @media (min-width: $tablet-width) {
-    margin-top: 0;
-    margin-bottom: 26px;
+    margin: 0 0 26px 0;
   }
 }
 

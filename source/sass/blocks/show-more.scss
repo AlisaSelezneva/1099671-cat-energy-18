@@ -1,5 +1,10 @@
 .show-more {
+  margin-top: 24px;
   outline: $temporarily; /*временная рамка*/
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .show-more__title {
