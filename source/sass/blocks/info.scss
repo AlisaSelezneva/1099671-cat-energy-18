@@ -51,6 +51,8 @@
 }
 
 .info__map {
+  padding: 0;
+
   @media (min-width: $tablet-width) {
     width: 100%;
     height: 400px;

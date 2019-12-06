@@ -3,7 +3,7 @@
 }
 
 .form__group {
-  padding: 0 20px 23px 20px;
+  padding: 0;
   margin: 0;
   font-family: $additional-font;
   font-size: 16px;
@@ -41,19 +41,46 @@
 
 .form__list {
   @include nolist();
+
+  padding-top: 21px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 0 25px 28px;
+  }
+}
+
+.form__list--checkbox {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .form__item {
+  margin-bottom: 13px;
   color: $gray-darkest;
   border-color: $pinkish-gray;
+
+  @media (min-width: $tablet-width) {
+    min-width: 304px;
+    margin-bottom: 32px;
+  }
 
   &:active {
     color: $black-two-30;
   }
 }
 
+
 .form__button {
-  margin: 0 20px 23px 20px;
+  margin: 34px 0 23px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .form__note {
@@ -61,4 +88,8 @@
   margin: 0;
   line-height: 16px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }
