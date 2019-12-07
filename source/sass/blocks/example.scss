@@ -13,6 +13,18 @@
 
 .example__list {
   @include nolist();
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.example__item {
+  margin-right: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 42px;
+  }
 }
 
 .example__value {
@@ -34,4 +46,22 @@
   text-align: center;
   text-transform: uppercase;
   color: $gray-darken;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.example__wrapper--desktop {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 430px;
+  }
 }

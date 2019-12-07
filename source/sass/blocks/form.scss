@@ -1,5 +1,16 @@
 .form {
   padding-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+.form__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form__group {
@@ -10,6 +21,17 @@
   text-transform: uppercase;
   border-style: none;
   outline: $temporarily; /*временная рамка*/
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.form__group--flex {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form__label {
@@ -34,9 +56,19 @@
 }
 
 .form__textarea {
+  width: 280px;
   font-family: $additional-font;
   font-size: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 705px;
+    padding: 17px 0 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .form__list {
@@ -57,6 +89,16 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+.form__list--radio {
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .form__item {
@@ -69,17 +111,24 @@
     margin-bottom: 32px;
   }
 
+  @media (min-width: $desktop-width) {
+    min-width: 204px;
+  }
+
   &:active {
     color: $black-two-30;
   }
 }
 
-
 .form__button {
   margin: 34px 0 23px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 61px 72px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
   }
 }
 
@@ -87,9 +136,7 @@
   padding: 0;
   margin: 0;
   line-height: 16px;
+  font-family: "Arial", sans-serif;
   text-align: center;
-
-  @media (min-width: $tablet-width) {
-    text-align: center;
-  }
+  text-transform: none;
 }
