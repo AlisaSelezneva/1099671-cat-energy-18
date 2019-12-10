@@ -1,4 +1,5 @@
 .form {
+  padding-left: 70px;
   padding-bottom: 34px;
 
   @media (min-width: $tablet-width) {
@@ -38,6 +39,12 @@
   color: $gray-darkest;
 }
 
+.form__label--name {
+  @media (min-width: $desktop-width) {
+    width: 506px;
+  }
+}
+
 .form__input {
   font-family: $additional-font;
   font-size: 16px;
@@ -56,18 +63,13 @@
 }
 
 .form__textarea {
-  width: 280px;
+  width: 100%;
   font-family: $additional-font;
   font-size: 16px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    width: 705px;
     padding: 17px 0 0 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
   }
 }
 

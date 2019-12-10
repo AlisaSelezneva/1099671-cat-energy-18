@@ -15,6 +15,11 @@
     background-color: $white;
     text-align: left;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    min-height: 656px;
+  }
 }
 
 .promo__title {
@@ -23,9 +28,15 @@
   line-height: 36px;
 
   @media (min-width: $tablet-width) {
+    width: 415px;
     font-size: 60px;
     line-height: 60px;
     color: $gray-darken;
+    z-index: 15;
+  }
+
+  @media (min-width: $desktop-width) {
+
   }
 }
 
@@ -35,6 +46,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    z-index: 15;
     color: $gray-darken;
   }
 
@@ -47,11 +59,30 @@
 .promo__image {
   @media (min-width: $tablet-width) {
     width: 709px;
-    height: auto;
+    height: 499px;
+    margin-top: -80px;
     order: 2;
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 130px;
+    left: 408px;
     width: 552px;
+  }
+}
+
+.promo__button {
+  z-index: 15;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
+    min-height: 52px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }

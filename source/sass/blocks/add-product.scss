@@ -11,7 +11,7 @@
   @include nolist();
 
   @media (min-width: $desktop-width) {
-    padding-right: 40px;
+    margin-right: 40px;
   }
 }
 
@@ -45,6 +45,10 @@
   @media (min-width: $tablet-width) {
     margin: 0 0 26px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 160px;
+  }
 }
 
 .add-products__value {
@@ -55,7 +59,12 @@
     margin-bottom: 26px;
     display: flex;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 160px;
+  }
 }
+
 
 .add-products__subtitle {
   font-family: $additional-font;
@@ -72,7 +81,7 @@
 
 .add-products__button {
   @media (min-width: $tablet-width) {
-    width: 633px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,23 +1,43 @@
 .info {
   line-height: 20px;
   margin-top: 0;
+
+  @media (min-width: $desktop-width) {
+    min-height: 400px;
+    position: relative;
+  }
+}
+
+.info__text--form {
+  @media (min-width: $tablet-width) {
+    padding-left: 130px;
+  }
+}
+
+.info__text--catalog {
+  @media (min-width: $tablet-width) {
+    background-color: $gray-light;
+  }
 }
 
 .info__text {
   display: flex;
   justify-content: space-between;
   padding: 32px 25px 28px 19px;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
     padding: 69px 31px 62px 32px;
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 100px;
+    left: 100px;
     width: 570px;
     padding-right: 90px;
     padding-bottom: 59px;
     padding-left: 76px;
-    background-color: $white;
   }
 }
 
