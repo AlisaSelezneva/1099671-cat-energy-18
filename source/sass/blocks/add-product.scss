@@ -47,7 +47,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 160px;
+    width: 220px;
   }
 }
 
@@ -61,7 +61,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 160px;
+    width: 270px;
+  }
+
+  &--weight {
+    @media (min-width: $desktop-width) {
+      width: 230px;
+    }
   }
 }
 

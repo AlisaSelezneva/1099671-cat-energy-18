@@ -8,26 +8,14 @@
   }
 }
 
-.info__text--form {
-  @media (min-width: $tablet-width) {
-    padding-left: 130px;
-  }
-}
-
-.info__text--catalog {
-  @media (min-width: $tablet-width) {
-    background-color: $gray-light;
-  }
-}
-
 .info__text {
   display: flex;
   justify-content: space-between;
   padding: 32px 25px 28px 19px;
-  background-color: $white;
+  outline: $temporarily; /*временная рамка*/
 
   @media (min-width: $tablet-width) {
-    padding: 69px 31px 62px 32px;
+    padding: 69px 30px 62px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,6 +26,26 @@
     padding-right: 90px;
     padding-bottom: 59px;
     padding-left: 76px;
+    background-color: $white;
+  }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      padding-right: 95px;
+      padding-left: 38px;
+      margin: auto;
+      background-color: $gray-light;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-color: $white;
+    }
+  }
+
+  &--catalog {
+    @media (min-width: $tablet-width) {
+      background-color: $gray-light;
+    }
   }
 }
 
@@ -75,6 +83,7 @@
 
 .info__map {
   padding: 0;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     width: 100%;

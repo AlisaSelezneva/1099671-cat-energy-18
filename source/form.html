@@ -38,21 +38,21 @@
     </div>
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
       <div class="form__wrapper">
-        <fieldset class="form__group">
+        <fieldset class="form__group form__group--main">
           <p class="form__field">
-            <label class="form__label--name" for="user-name">Имя:*</label>
-            <input class="form__input" id="user-name" type="text" name="user" value="" placeholder="Барсик">
+            <label class="form__label" for="user-name">Имя:*</label>
+            <input class="form__input form__input--name" id="user-name" type="text" name="user" value="" placeholder="Барсик">
           </p>
           <p class="form__field">
             <label class="form__label" for="weight-field">Вес (кг):*</label>
-            <input class="form__input" id="weight-field" type="text" name="weight" value="" placeholder="7">
+            <input class="form__input form__input--weight" id="weight-field" type="text" name="weight" value="" placeholder="7">
           </p>
           <p class="form__field">
             <label class="form__label" for="age-field">Возраст (лет):</label>
-            <input class="form__input" id="age-field" type="text" name="age" value="" placeholder="7">
+            <input class="form__input form__input--age" id="age-field" type="text" name="age" value="" placeholder="7">
           </p>
         </fieldset>
-        <fieldset class="form__group">
+        <fieldset class="form__group form__group--programs">
           <ul class="form__list form__list--radio">
             <li class="form__item">
               <input type="radio" name="slim" value="" id="slim-item" checked>
@@ -74,24 +74,24 @@
           </ul>
         </fieldset>
       </div>
-      <fieldset class="form__group">
+      <fieldset class="form__group form__group--contacts">
         <h2 class="page-form__subtitle">Контактные данные (владельца кота)</h2>
         <div class="form__wrapper">
           <p class="form__field form__field--email">
             <label class="form__label" for="e-mail-field">E-mail:*</label>
-            <input class="form__input" id="e-mail-field" type="email" name="e-mail" value="" placeholder="kuklachev@gmail.com">
+            <input class="form__input form__input--email" id="e-mail-field" type="email" name="e-mail" value="" placeholder="kuklachev@gmail.com">
           </p>
           <p class="form__field form__field--phone">
             <label class="form__label" for="phone-field">Телефон:*</label>
-            <input class="form__input" id="phone-field" type="tel" name="phone" value="" placeholder="8 (960) 900-60-90">
+            <input class="form__input form__input--phone" id="phone-field" type="tel" name="phone" value="" placeholder="8 (960) 900-60-90">
           </p>
         </div>
       </fieldset>
-      <fieldset class="form__group">
+      <fieldset class="form__group form__group--comment">
         <h2 class="page-form__subtitle">Комментарий</h2>
         <textarea class="form__textarea" id="text-field" rows="5" cols="30" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
-      <fieldset class="form__group">
+      <fieldset class="form__group form__group--add">
         <h2 class="page-form__subtitle">Дополнительно</h2>
         <ul class="form__list form__list--checkbox">
           <li class="form__item">
@@ -119,7 +119,7 @@
             </label>
           </li>
         </ul>
-        <div class="form__group--flex">
+        <div class="form__group--secondery">
           <button class="form__button button" type="submit">Отправить заявку</button>
           <p class="form__note">* — Обязательные поля</p>
         </div>

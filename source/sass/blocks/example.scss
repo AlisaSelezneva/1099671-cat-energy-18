@@ -3,6 +3,11 @@
   padding-bottom: 39px;
   outline: $temporarily; /*временная рамка*/
   background-color: $gray-light;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .example__title {
@@ -14,17 +19,16 @@
 
 .example__list {
   @include nolist();
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-  }
+  display: flex;
 }
 
 .example__item {
-  margin-right: 32px;
-
   @media (min-width: $tablet-width) {
     margin-right: 42px;
+  }
+
+  &:nth-child(odd) {
+    margin-right: 32px;
   }
 }
 
@@ -49,20 +53,29 @@
   color: $gray-darken;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    display: flex;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }
 
 .example__wrapper {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    width: 430px;
-  }
-}
-
-.example__wrapper--desktop {
   @media (min-width: $desktop-width) {
-    display: flex;
+    width: 395px;
+  }
+
+  &--desktop {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-wrap: wrap;
+    }
   }
 }

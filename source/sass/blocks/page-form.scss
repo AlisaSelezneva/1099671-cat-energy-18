@@ -1,3 +1,10 @@
+.page-form {
+  @media (min-width: $tablet-width) {
+    padding-right: 67px;
+    padding-left: 38px;
+  }
+}
+
 .page-form__wrapper {
   padding: 30px 0 39px 0;
   margin: 0;
@@ -25,7 +32,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 70px;
+    width: 342px;
   }
 }
 

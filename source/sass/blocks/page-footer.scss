@@ -1,6 +1,5 @@
 .page-footer {
   color: $gray;
-  background-color: $gray-light;
   outline: $temporarily; /*временная рамка*/
 }
 
@@ -13,6 +12,10 @@
 }
 
 .page-footer__wrapper {
+  margin: 0 auto;
+  background-color: $gray-light;
+  outline: $temporarily; /*временная рамка*/
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
