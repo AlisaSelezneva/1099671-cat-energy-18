@@ -6,8 +6,16 @@
 }
 
 .page-form__wrapper {
-  padding: 30px 0 39px 0;
+  padding: 35px 0 39px 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 53px 0 0 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 53px 0 0 0;
+  }
 }
 
 .page-form__title {
@@ -16,20 +24,20 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 53px;
     font-size: 60px;
     line-height: 60px;
   }
 }
 
 .page-form__text {
-  margin: 0;
+  margin: 0 0 39px 0;
   padding: 0;
   font-family: $additional-font;
   text-transform: uppercase;
   color: $gray-darken;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 69px 0;
     font-size: 20px;
     line-height: 30px;
     width: 342px;

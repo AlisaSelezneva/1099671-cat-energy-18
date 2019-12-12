@@ -53,24 +53,33 @@
 
 .add-products__value {
   line-height: 14px;
+  display: flex;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
     margin-bottom: 26px;
-    display: flex;
+    width: 230px;
   }
 
   @media (min-width: $desktop-width) {
     width: 270px;
   }
-
-  &--weight {
-    @media (min-width: $desktop-width) {
-      width: 230px;
-    }
-  }
 }
 
+.add-products__weight {
+  @media (min-width: $tablet-width) {
+    width: 130px;
+    text-align: right;
+    margin-right: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
+    text-align: left;
+    margin-right: 0;
+  }
+}
 
 .add-products__subtitle {
   font-family: $additional-font;

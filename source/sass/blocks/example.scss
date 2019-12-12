@@ -4,9 +4,14 @@
   outline: $temporarily; /*временная рамка*/
   background-color: $gray-light;
 
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, $white 65%, $bg-example 50%);
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    background: linear-gradient(to top, $bg-example 75%, $white 50%);
   }
 }
 
@@ -15,6 +20,18 @@
   padding: 0;
 
   @include subtitle();
+}
+
+.example__description {
+  margin: 33px 0 27px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 60px 0 56px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 142px 0 71px 0;
+  }
 }
 
 .example__list {
@@ -33,6 +50,7 @@
 }
 
 .example__value {
+  margin: 0;
   font-family: $additional-font;
   font-size: 24px;
   line-height: 24px;
@@ -46,6 +64,7 @@
 }
 
 .example__cost {
+  margin: 22px 0 44px 0;
   font-family: $additional-font;
   line-height: 20px;
   text-align: center;
@@ -53,12 +72,14 @@
   color: $gray-darken;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     font-size: 20px;
     display: flex;
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 48px;
     text-align: center;
   }
 }
@@ -67,15 +88,16 @@
   @media (min-width: $desktop-width) {
     width: 395px;
   }
+}
 
-  &--desktop {
-    @media (min-width: $tablet-width) {
-      display: flex;
-      justify-content: space-between;
-    }
+.example__desktop {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 56px 0 80px 0;
+  }
 
-    @media (min-width: $desktop-width) {
-      flex-wrap: wrap;
-    }
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
   }
 }

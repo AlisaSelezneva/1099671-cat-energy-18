@@ -21,7 +21,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 100px;
-    left: 100px;
+    left: 575px;
     width: 570px;
     padding-right: 90px;
     padding-bottom: 59px;
@@ -30,11 +30,12 @@
   }
 
   &--form {
+    background-color: $gray-light;
+
     @media (min-width: $tablet-width) {
-      padding-right: 95px;
-      padding-left: 38px;
+      padding-right: 67px;
+      padding-left: 73px;
       margin: auto;
-      background-color: $gray-light;
     }
 
     @media (min-width: $desktop-width) {

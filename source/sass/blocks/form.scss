@@ -1,8 +1,9 @@
 .form {
   padding-bottom: 34px;
+  outline: $temporarily; /*временная рамка*/
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 0;
+    padding-bottom: 72px;
   }
 }
 
@@ -22,18 +23,8 @@
   border-style: none;
   outline: $temporarily; /*временная рамка*/
 
-  @media (min-width: $tablet-width) {
-    width: 630px;
-  }
-
   @media (min-width: $desktop-width) {
     display: flex;
-  }
-
-  &--secondery {
-    @media (min-width: $tablet-width) {
-      display: flex;
-    }
   }
 
   &--main {
@@ -52,98 +43,38 @@
   &--comment,
   &--add {
     @media (min-width: $desktop-width) {
-      width: 1195px;
+      width: 100%;
     }
+  }
+}
+
+.form__secondary {
+  @media (min-width: $tablet-width) {
+    display: flex;
   }
 }
 
 .form__label {
   color: $gray-darkest;
-
-  &--name {
-    @media (min-width: $desktop-width) {
-      width: 506px;
-    }
-  }
 }
 
 .form__field {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .form__input {
-  margin: 0;
+  margin: 0 0 0 16px;
   height: 45px;
   padding: 16px 15px;
   font-family: $additional-font;
   font-size: 16px;
   text-transform: uppercase;
   border: solid 1px rgba(205, 205, 205, 0.5);
+  flex-grow: 1;
 
   @media (min-width: $tablet-width) {
     padding: 17px 22px;
-  }
-
-  &--name {
-    width: 229px;
-
-    @media (min-width: $tablet-width) {
-      width: 567px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 506px;
-    }
-  }
-
-  &--weight {
-    width: 204px;
-
-    @media (min-width: $tablet-width) {
-      width: 536px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 475px;
-    }
-  }
-
-  &--age {
-    width: 172px;
-
-    @media (min-width: $tablet-width) {
-      width: 497px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 436;
-    }
-  }
-
-  &--email {
-    width: 219px;
-
-    @media (min-width: $tablet-width) {
-      width: 551px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 486px;
-    }
-  }
-
-  &--phone {
-    width: 204px;
-
-    @media (min-width: $tablet-width) {
-      width: 535px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 472px;
-    }
   }
 
   &:hover {
@@ -206,12 +137,17 @@
   border-color: $pinkish-gray;
 
   @media (min-width: $tablet-width) {
-    min-width: 304px;
     margin-bottom: 32px;
   }
 
-  @media (min-width: $desktop-width) {
-    min-width: 204px;
+  &--checkbox {
+    @media (min-width: $tablet-width) {
+      width: 50%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 25%;
+    }
   }
 
   &:active {
@@ -220,10 +156,10 @@
 }
 
 .form__button {
-  margin: 34px 0 23px 0;
+  margin: 34px 0 0 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 61px 72px 0;
+    margin: 0 61px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -233,7 +169,7 @@
 
 .form__note {
   padding: 0;
-  margin: 0;
+  margin: 23px 0 0 0;
   line-height: 16px;
   font-family: "Arial", sans-serif;
   text-align: center;
