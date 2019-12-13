@@ -38,14 +38,6 @@
       width: 570px;
     }
   }
-
-  &--contacts,
-  &--comment,
-  &--add {
-    @media (min-width: $desktop-width) {
-      width: 100%;
-    }
-  }
 }
 
 .form__secondary {
