@@ -1,18 +1,84 @@
+.add-products {
+  outline: $temporarily; /*временная рамка*/
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .add-products__list {
   @include nolist();
+
+  @media (min-width: $desktop-width) {
+    margin-right: 40px;
+  }
+}
+
+.add-products__item {
+  outline: $temporarily; /*временная рамка*/
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 28px 38px;
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 895px;
+    padding: 15px 0 16px 0;
+    margin: 0;
+  }
 }
 
 .add-products__name {
+  padding: 0;
   font-family: $additional-font;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
   color: $gray-darkest;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 26px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 220px;
+  }
 }
 
 .add-products__value {
   line-height: 14px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 26px;
+    width: 230px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 270px;
+  }
+}
+
+.add-products__weight {
+  @media (min-width: $tablet-width) {
+    width: 130px;
+    text-align: right;
+    margin-right: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
+    text-align: left;
+    margin-right: 0;
+  }
 }
 
 .add-products__subtitle {
@@ -21,4 +87,19 @@
   line-height: 24px;
   font-weight: 400;
   color: $gray-darken;
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.add-products__button {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }

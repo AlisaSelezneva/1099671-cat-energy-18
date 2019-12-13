@@ -1,5 +1,18 @@
 .slider__list {
   @include nolist();
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.slider__item {
+  width: 100%;
+}
+
+.slider__toggles {
+  display: flex;
+  justify-content: space-between;
 }
 
 .slider__toggle {

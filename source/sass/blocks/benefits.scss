@@ -18,6 +18,11 @@
 
 .benefits__subtitle {
   @include subtitle();
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .benefits__item {
