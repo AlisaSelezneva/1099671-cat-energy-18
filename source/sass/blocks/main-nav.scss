@@ -33,6 +33,27 @@
   }
 }
 
+.main-nav__item {
+  padding: 24px 10px;
+  font-family: $additional-font;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+
+  @include border-top();
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 36px 0 0;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    color: $gray-darkest;
+    border: none;
+  }
+}
+
 .main-nav__toggle {
   @media (min-width: $tablet-width) {
     display: none;

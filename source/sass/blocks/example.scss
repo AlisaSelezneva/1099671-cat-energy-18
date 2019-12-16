@@ -20,6 +20,10 @@
   padding: 0;
 
   @include subtitle();
+
+  @media (min-width: $tablet-width) {
+    @include subtitle-tablet();
+  }
 }
 
 .example__description {
@@ -35,11 +39,16 @@
 }
 
 .example__list {
-  @include nolist();
   display: flex;
+  justify-content: space-between;
+
+  @include nolist();
 }
 
 .example__item {
+  border: 1px solid $pinkish-gray;
+  border-radius: 3px;
+
   @media (min-width: $tablet-width) {
     margin-right: 42px;
   }
@@ -50,6 +59,7 @@
 }
 
 .example__value {
+  padding: 17px 15px 12px 15px;
   margin: 0;
   font-family: $additional-font;
   font-size: 24px;

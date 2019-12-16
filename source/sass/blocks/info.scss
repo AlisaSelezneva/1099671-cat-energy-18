@@ -11,8 +11,9 @@
 .info__text {
   display: flex;
   justify-content: space-between;
-  padding: 32px 25px 28px 19px;
+  padding: 32px 25px 26px 19px;
   outline: $temporarily; /*временная рамка*/
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
     padding: 69px 30px 62px 30px;
@@ -56,7 +57,8 @@
 }
 
 .info__slogan {
-  margin: 0;
+  margin: 0 19px 0 0;
+  width: 150px;
   font-family: $additional-font;
   font-size: 16px;
   color: $gray-darken;

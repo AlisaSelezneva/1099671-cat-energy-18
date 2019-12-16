@@ -4,6 +4,11 @@
 
 .programs__list {
   @include nolist();
+  margin: 0 0 32px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 51px 0;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -12,7 +17,7 @@
 }
 
 .programs__item {
-  padding: 22px 36px 22px 20px;
+  padding: 22px 20px 22px 20px;
   background-color: $gray-light;
 
   @media (min-width: $tablet-width) {
@@ -31,6 +36,14 @@
   }
 }
 
+.programs__item--slim {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
 .programs__title {
   padding: 0;
   margin: 0;
@@ -40,6 +53,21 @@
   line-height: 37px;
   text-transform: uppercase;
   color: $gray-darken;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+  }
+}
+
+.programs__description {
+  margin: 0 0 20px 0;
+  padding: 24px 0 23px 0;
+  border-bottom: 1px solid $pinkish-gray;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 23px 61px 0;
+    border: none;
+  }
 }
 
 .programs__link {
@@ -52,5 +80,10 @@
 
   &:active {
     color: $black-30;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
   }
 }

@@ -1,5 +1,10 @@
 .benefits {
+  padding-bottom: 15px;
   outline: $temporarily; /*временная рамка*/
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 58px;
+  }
 }
 
 .benefits__list {
@@ -17,18 +22,23 @@
 }
 
 .benefits__subtitle {
+  margin: 0 0 35px 0;
+
   @include subtitle();
 
-  @media (min-width: $desktop-width) {
-    font-size: 60px;
-    line-height: 60px;
+  @media (min-width: $tablet-width) {
+    @include subtitle-tablet();
+
+    margin-bottom: 63px;
   }
 }
 
 .benefits__item {
+  margin: 0 7px 32px 20px;
+
   @media (min-width: $tablet-width) {
     width: 298px;
     padding-right: 67px;
-    margin-bottom: 89px;
+    margin: 0 0 48px 0;
   }
 }
