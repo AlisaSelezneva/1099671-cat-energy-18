@@ -17,6 +17,10 @@ body {
 a {
   color: $gray;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    color: inherit;
+  }
 }
 
 html {

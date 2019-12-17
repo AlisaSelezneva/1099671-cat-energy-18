@@ -4,6 +4,8 @@
 
 .production__subtitle {
   @include subtitle();
+  padding: 31px 0 36px 0;
+  margin: 0;
 }
 
 .production__list {
@@ -16,6 +18,12 @@
 }
 
 .production__item {
+  @include border-top();
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 25px 0;
+
   @media (min-width: $tablet-width) {
     padding: 165px 37px 40px 39px;
     margin-bottom: 92px;
@@ -46,10 +54,36 @@
 
 .production__title {
   @include subtitle-production();
+
+  width: 72px;
+  padding: 25px 0 18px 0;
+  text-transform: uppercase;
 }
 
 .production__table {
+  display: flex;
+  flex-direction: column;
   font-size: 12px;
   line-height: 16px;
   margin: 0;
+}
+
+.production__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.production__value {
+  width: 50px;
+  margin-right: 45px;
+}
+
+.production__line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.production__button {
+  font-size: 16px;
+  line-height: 20px;
 }

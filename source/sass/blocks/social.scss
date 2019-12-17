@@ -6,6 +6,10 @@
   border-bottom: 1px solid $pinkish-gray;
 
   @include nolist();
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .social__item {

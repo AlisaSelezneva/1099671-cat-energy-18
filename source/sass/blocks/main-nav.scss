@@ -52,6 +52,11 @@
     color: $gray-darkest;
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    color: $white;
+  }
 }
 
 .main-nav__toggle {
