@@ -43,6 +43,8 @@
   }
 
   &--catalog {
+    background-color: $gray-light;
+
     @media (min-width: $tablet-width) {
       padding-left: 71px;
       padding-right: 72px;

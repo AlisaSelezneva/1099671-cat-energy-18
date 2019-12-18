@@ -41,8 +41,7 @@
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
-
-  @include border-top();
+  border-top: $border-gray;
 
   @media (min-width: $tablet-width) {
     padding: 23px 36px 0 0;

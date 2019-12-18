@@ -2,6 +2,11 @@
   @include subtitle();
   padding: 31px 0 36px 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include subtitle-tablet();
+    padding: 65px 0 74px 0;
+  }
 }
 
 .production__list {
@@ -14,17 +19,19 @@
 }
 
 .production__item {
-  @include border-top();
-
   display: flex;
   flex-wrap: wrap;
   padding: 0 0 25px 0;
+  border-top: $border-gray;
 
   @media (min-width: $tablet-width) {
-    padding: 165px 37px 40px 39px;
-    margin-bottom: 92px;
+    justify-content: center;
+    align-self: baseline;
+    padding: 0 37px 40px 39px;
+    margin-bottom: 58px;
     width: 324px;
-    background-color: $gray-light;
+    background: linear-gradient(to top, $bg-example 83%, $white 50%);
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,7 +40,8 @@
 
   &:nth-child(odd) {
     @media (min-width: $tablet-width) {
-      margin-right: 50px;
+      margin-right: 60px;
+      background: linear-gradient(to top, $bg-example 90%, $white 50%);
     }
 
     @media (min-width: $desktop-width) {
@@ -54,6 +62,14 @@
   width: 72px;
   padding: 25px 0 18px 0;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 25px 10px 18px 10px;
+    width: 154px;
+    text-align: center;
+    font-size: 20px;
+  }
 }
 
 .production__table {
@@ -62,6 +78,11 @@
   font-size: 12px;
   line-height: 16px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    padding-bottom: 31px;
+  }
 }
 
 .production__wrapper {
@@ -72,14 +93,45 @@
 .production__value {
   width: 50px;
   margin-right: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding: 6px;
+    width: 145px;
+  }
 }
 
 .production__line {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: $border-gray;
+    align-items: center;
+  }
 }
 
 .production__button {
   font-size: 16px;
   line-height: 20px;
+}
+
+.production__link {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.production__image {
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 172px;
+  }
+
+  &--big {
+    @media (min-width: $tablet-width) {
+      width: 195px;
+      height: 208px;
+    }
+  }
 }

@@ -48,7 +48,7 @@
 }
 
 .example__item {
-  border: 1px solid $pinkish-gray;
+  border: $border-gray;
   border-radius: 3px;
 
   @media (min-width: $tablet-width) {
