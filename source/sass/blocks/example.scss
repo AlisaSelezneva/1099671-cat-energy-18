@@ -1,7 +1,6 @@
 .example {
   padding-top: 33px;
   padding-bottom: 39px;
-  outline: $temporarily; /*временная рамка*/
   background-color: $gray-light;
 
   @media (min-width: $tablet-width) {

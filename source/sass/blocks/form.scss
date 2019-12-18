@@ -1,6 +1,5 @@
 .form {
   padding-bottom: 34px;
-  outline: $temporarily; /*временная рамка*/
 
   @media (min-width: $tablet-width) {
     padding-bottom: 72px;
@@ -21,7 +20,6 @@
   font-size: 16px;
   text-transform: uppercase;
   border-style: none;
-  outline: $temporarily; /*временная рамка*/
 
   @media (min-width: $desktop-width) {
     display: flex;

@@ -1,6 +1,4 @@
 .add-products {
-  outline: $temporarily; /*временная рамка*/
-
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
@@ -16,8 +14,6 @@
 }
 
 .add-products__item {
-  outline: $temporarily; /*временная рамка*/
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;

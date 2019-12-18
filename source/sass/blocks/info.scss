@@ -12,7 +12,6 @@
   display: flex;
   justify-content: space-between;
   padding: 32px 25px 26px 19px;
-  outline: $temporarily; /*временная рамка*/
   background-color: $white;
 
   @media (min-width: $tablet-width) {
