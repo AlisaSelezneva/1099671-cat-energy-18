@@ -30,6 +30,8 @@
   }
 
   &--form {
+    background-color: $gray-light;
+
     @media (min-width: $tablet-width) {
       padding-right: 67px;
       padding-left: 73px;

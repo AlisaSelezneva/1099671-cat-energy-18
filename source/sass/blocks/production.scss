@@ -7,6 +7,10 @@
     @include subtitle-tablet();
     padding: 65px 0 74px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 83px 0 75px 0;
+  }
 }
 
 .production__list {
@@ -36,6 +40,7 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    padding: 0 39px 40px 40px;
   }
 
   &:nth-child(odd) {
@@ -97,6 +102,10 @@
   @media (min-width: $tablet-width) {
     padding: 6px;
     width: 145px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
   }
 }
 

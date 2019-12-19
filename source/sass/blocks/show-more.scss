@@ -13,6 +13,11 @@
     background: $white;
     border: $border-gray;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    font-size: 20px;
+  }
 }
 
 .show-more__title {
@@ -47,6 +52,11 @@
 
   @media (min-width: $tablet-width) {
     width: 249px;
+    align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
     align-self: center;
   }
 }
