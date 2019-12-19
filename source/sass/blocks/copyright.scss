@@ -6,11 +6,19 @@
     display: flex;
     align-self: center;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
 }
 
 .copyright__text {
   color: $gray;
   text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 23px;
+  }
 
   &:active {
     color: $gray-30;
