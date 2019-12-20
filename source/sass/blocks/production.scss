@@ -6,6 +6,7 @@
   @media (min-width: $tablet-width) {
     @include subtitle-tablet();
     padding: 65px 0 74px 0;
+    margin-bottom: 74px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,11 +31,10 @@
 
   @media (min-width: $tablet-width) {
     justify-content: center;
-    align-self: baseline;
     padding: 0 37px 40px 39px;
-    margin-bottom: 58px;
+    margin-bottom: 150px;
     width: 324px;
-    background: linear-gradient(to top, $bg-example 83%, $white 50%);
+    background: $bg-example;
     border: none;
   }
 
@@ -46,7 +46,9 @@
   &:nth-child(odd) {
     @media (min-width: $tablet-width) {
       margin-right: 60px;
-      background: linear-gradient(to top, $bg-example 90%, $white 50%);
+      margin-bottom: 150px;
+      align-self: flex-end;
+      background: $bg-example;
     }
 
     @media (min-width: $desktop-width) {
@@ -70,7 +72,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 25px 10px 18px 10px;
+    padding: 39px 10px 18px 10px;
     width: 154px;
     text-align: center;
     font-size: 20px;
@@ -93,6 +95,7 @@
 .production__wrapper {
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 
 .production__value {
@@ -133,6 +136,8 @@
 
 .production__image {
   @media (min-width: $tablet-width) {
+    display: flex;
+    top: 50px;
     width: 161px;
     height: 172px;
   }

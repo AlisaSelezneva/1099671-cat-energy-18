@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 58px;
+    border-bottom: $border-gray;
   }
 }
 
@@ -29,20 +30,53 @@
   @media (min-width: $tablet-width) {
     @include subtitle-tablet();
 
-    margin-bottom: 63px;
+    margin: 0;
   }
 }
 
 .benefits__item {
-  margin: 0 7px 32px 20px;
+  margin: 0 0 32px 80px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 298px;
-    padding-right: 67px;
-    margin: 0 0 48px 0;
+    width: 260px;
+    margin: 180px 0 48px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    margin: 180px 40px 48px 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    background-color: $apple;
+
+    @media (min-width: $tablet-width) {
+      top: -110px;
+      left: 0;
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+.benefits__bg {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    top: -150px;
+    left: 120px;
+    font-family: $additional-font;
+    font-size: 281px;
+    line-height: 281px;
+    color: $gray-light;
+    z-index: -2;
   }
 }

@@ -1,0 +1,7 @@
+.image__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: flex-end;
+    height: 132px;
+  }
+}

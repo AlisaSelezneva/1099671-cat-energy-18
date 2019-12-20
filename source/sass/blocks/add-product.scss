@@ -107,7 +107,8 @@
   border-bottom: $border-gray;
 
   @media (min-width: $tablet-width) {
-    padding: 13px 0 75px 37px;
+    padding: 0 0 75px 37px;
+    margin-top: -70px;
     font-size: 36px;
     line-height: 36px;
   }

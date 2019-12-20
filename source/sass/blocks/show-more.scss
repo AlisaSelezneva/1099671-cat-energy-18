@@ -6,10 +6,10 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    align-self: center;
+    justify-content: center;
     padding: 55px 0 25px 0;
     width: 324px;
-    height: 417px;
+    height: 431px;
     background: $white;
     border: $border-gray;
   }
