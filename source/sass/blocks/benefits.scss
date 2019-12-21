@@ -63,20 +63,72 @@
       height: 80px;
     }
   }
-}
 
-.benefits__bg {
-  display: none;
+  &--healthy::after {
+    display: none;
+    content: "1";
 
-  @media (min-width: $tablet-width) {
-    display: block;
-    position: absolute;
-    top: -150px;
-    left: 120px;
-    font-family: $additional-font;
-    font-size: 281px;
-    line-height: 281px;
-    color: $gray-light;
-    z-index: -2;
+    @media (min-width: $tablet-width) {
+      display: block;
+      position: absolute;
+      top: -150px;
+      left: 120px;
+      font-family: $additional-font;
+      font-size: 281px;
+      line-height: 281px;
+      color: $gray-light;
+      z-index: -2;
+    }
+  }
+
+  &--easy::after {
+    display: none;
+    content: "2";
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      position: absolute;
+      top: -150px;
+      left: 120px;
+      font-family: $additional-font;
+      font-size: 281px;
+      line-height: 281px;
+      color: $gray-light;
+      z-index: -2;
+    }
+  }
+
+  &--functional::after {
+    display: none;
+    content: "3";
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      position: absolute;
+      top: -150px;
+      left: 120px;
+      font-family: $additional-font;
+      font-size: 281px;
+      line-height: 281px;
+      color: $gray-light;
+      z-index: -2;
+    }
+  }
+
+  &--change::after {
+    display: none;
+    content: "4";
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      position: absolute;
+      top: -150px;
+      left: 120px;
+      font-family: $additional-font;
+      font-size: 281px;
+      line-height: 281px;
+      color: $gray-light;
+      z-index: -2;
+    }
   }
 }
