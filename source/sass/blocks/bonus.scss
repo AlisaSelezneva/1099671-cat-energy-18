@@ -1,7 +1,6 @@
 .bonus {
-  margin-top: 57px;
+  margin-top: 39px;
   margin-bottom: 35px;
-  padding: 65px 20px 43px 20px;
   width: 100%;
   min-height: 298px;
   font-size: 16px;
@@ -11,10 +10,11 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-color: $apple;
   background-repeat: no-repeat;
-  outline: $temporarily; /*временная рамка*/
 
   @media (min-width: $tablet-width) {
-    min-height: 200px;
+    height: 200px;
+    margin-top: 69px;
+    margin-bottom: 76px;
     padding-top: 75px;
     padding-bottom: 69px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
@@ -22,12 +22,24 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    min-height: 289px;
+    height: 310px;
     margin: 0;
+    padding: 65px 43px 43px 43px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
   }
 }
 
 .bonus__text {
+  display: inline-block;
   margin: 0;
+  padding: 64px 10px 43px 10px;
+  width: 169px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }

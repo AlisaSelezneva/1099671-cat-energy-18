@@ -1,5 +1,11 @@
 .benefits {
-  outline: $temporarily; /*временная рамка*/
+  position: relative;
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 58px;
+    border-bottom: $border-gray;
+  }
 }
 
 .benefits__list {
@@ -17,18 +23,85 @@
 }
 
 .benefits__subtitle {
+  margin: 0 0 35px 0;
+
   @include subtitle();
 
-  @media (min-width: $desktop-width) {
-    font-size: 60px;
-    line-height: 60px;
+  @media (min-width: $tablet-width) {
+    @include subtitle-tablet();
+
+    margin: 0;
   }
 }
 
 .benefits__item {
+  margin: 0 0 32px 80px;
+  position: relative;
+
   @media (min-width: $tablet-width) {
-    width: 298px;
-    padding-right: 67px;
-    margin-bottom: 89px;
+    width: 260px;
+    margin: 180px 0 48px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 180px 40px 48px 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    background-color: $apple;
+
+    @media (min-width: $tablet-width) {
+      top: -110px;
+      left: 0;
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &::after {
+    display: none;
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      position: absolute;
+      top: -150px;
+      left: 120px;
+      font-family: $additional-font;
+      font-size: 281px;
+      line-height: 281px;
+      color: $gray-light;
+      z-index: -2;
+    }
+  }
+
+  &--healthy::after {
+    @media (min-width: $tablet-width) {
+      content: "1";
+    }
+  }
+
+  &--easy::after {
+    @media (min-width: $tablet-width) {
+      content: "2";
+    }
+  }
+
+  &--functional::after {
+    @media (min-width: $tablet-width) {
+      content: "3";
+    }
+  }
+
+  &--change::after {
+    @media (min-width: $tablet-width) {
+      content: "4";
+    }
   }
 }

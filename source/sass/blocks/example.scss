@@ -1,16 +1,18 @@
 .example {
   padding-top: 33px;
   padding-bottom: 39px;
-  outline: $temporarily; /*временная рамка*/
   background-color: $gray-light;
 
   @media (min-width: $tablet-width) {
+    padding-top: 51px;
+    padding-bottom: 68px;
     background: linear-gradient(to bottom, $white 65%, $bg-example 50%);
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    padding-top: 63px;
     background: linear-gradient(to top, $bg-example 75%, $white 50%);
   }
 }
@@ -20,6 +22,10 @@
   padding: 0;
 
   @include subtitle();
+
+  @media (min-width: $tablet-width) {
+    @include subtitle-tablet();
+  }
 }
 
 .example__description {
@@ -35,11 +41,16 @@
 }
 
 .example__list {
-  @include nolist();
   display: flex;
+  justify-content: space-between;
+
+  @include nolist();
 }
 
 .example__item {
+  border: $border-gray;
+  border-radius: 3px;
+
   @media (min-width: $tablet-width) {
     margin-right: 42px;
   }
@@ -50,17 +61,29 @@
 }
 
 .example__value {
+  padding: 17px 15px 12px 15px;
   margin: 0;
   font-family: $additional-font;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
   color: $gray-darken;
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 32px 20px 31px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__parametr {
   font-size: 12px;
   line-height: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__cost {
@@ -73,6 +96,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    width: 174px;
     font-size: 20px;
     display: flex;
     text-align: right;
@@ -99,5 +123,6 @@
 
   @media (min-width: $desktop-width) {
     flex-wrap: wrap;
+    margin: 0;
   }
 }

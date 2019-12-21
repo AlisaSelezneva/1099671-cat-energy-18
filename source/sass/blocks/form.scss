@@ -1,6 +1,5 @@
 .form {
   padding-bottom: 34px;
-  outline: $temporarily; /*временная рамка*/
 
   @media (min-width: $tablet-width) {
     padding-bottom: 72px;
@@ -21,7 +20,6 @@
   font-size: 16px;
   text-transform: uppercase;
   border-style: none;
-  outline: $temporarily; /*временная рамка*/
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -48,11 +46,38 @@
 
 .form__label {
   color: $gray-darkest;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .form__field {
   display: flex;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 20px 0;
+  }
+
+  &--age {
+    @media (min-width: $desktop-width) {
+      margin: 0;
+    }
+  }
+
+  &--email {
+    @media (min-width: $desktop-width) {
+      width: 486px;
+    }
+  }
+
+  &--phone {
+    @media (min-width: $desktop-width) {
+      width: 472px;
+    }
+  }
 }
 
 .form__input {
@@ -67,6 +92,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 17px 22px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 52px;
   }
 
   &:hover {
@@ -89,6 +120,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 17px 20px;
+    border: $border-gray;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -99,7 +136,16 @@
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
+    margin: 72px 0 0 0;
     padding: 25px 0 25px 28px;
+    font-size: 20px;
+    line-height: 20px;
+    border: $border-gray;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    padding-bottom: 43px;
   }
 
   &--checkbox {
@@ -108,6 +154,7 @@
       flex-wrap: wrap;
       font-size: 20px;
       line-height: 20px;
+      border: none;
     }
 
     @media (min-width: $desktop-width) {
@@ -142,6 +189,12 @@
     }
   }
 
+  &--advice {
+    @media (min-width: $desktop-width) {
+      margin: 0;
+    }
+  }
+
   &:active {
     color: $black-two-30;
   }
@@ -156,6 +209,8 @@
 
   @media (min-width: $desktop-width) {
     width: 568px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 

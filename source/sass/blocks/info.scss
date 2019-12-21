@@ -11,11 +11,11 @@
 .info__text {
   display: flex;
   justify-content: space-between;
-  padding: 32px 25px 28px 19px;
-  outline: $temporarily; /*временная рамка*/
+  padding: 32px 25px 26px 19px;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
-    padding: 69px 30px 62px 30px;
+    padding: 69px 72px 59px 71px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,6 +30,8 @@
   }
 
   &--form {
+    background-color: $gray-light;
+
     @media (min-width: $tablet-width) {
       padding-right: 67px;
       padding-left: 73px;
@@ -43,6 +45,8 @@
   }
 
   &--catalog {
+    background-color: $gray-light;
+
     @media (min-width: $tablet-width) {
       padding-left: 71px;
       padding-right: 72px;
@@ -56,13 +60,15 @@
 }
 
 .info__slogan {
-  margin: 0;
+  margin: 0 19px 0 0;
+  width: 150px;
   font-family: $additional-font;
   font-size: 16px;
   color: $gray-darken;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     width: 154px;
     font-size: 20px;
     line-height: 25px;
@@ -77,12 +83,11 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    width: 153px;
+    width: 155px;
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
-    width: 155px;
     text-align: left;
   }
 }

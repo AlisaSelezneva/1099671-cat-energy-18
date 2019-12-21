@@ -12,6 +12,14 @@
   color: $gray-darken;
 }
 
+@mixin subtitle-tablet () {
+  font-family: $additional-font;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 400;
+  color: $gray-darken;
+}
+
 @mixin subtitle-production () {
   margin: 0;
   font-family: $additional-font;

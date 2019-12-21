@@ -6,7 +6,7 @@
 }
 
 .page-form__wrapper {
-  padding: 35px 0 39px 0;
+  padding: 35px 0 0 0;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -21,7 +21,7 @@
 .page-form__title {
   @include subtitle();
   margin: 0;
-  padding: 0;
+  padding: 30px 0 0 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -32,7 +32,9 @@
 .page-form__text {
   margin: 0 0 39px 0;
   padding: 0;
+  width: 226px;
   font-family: $additional-font;
+  text-align: left;
   text-transform: uppercase;
   color: $gray-darken;
 
@@ -52,6 +54,7 @@
   text-transform: none;
 
   @media (min-width: $tablet-width) {
+    margin: 69px 0 53px 0;
     font-size: 36px;
     line-height: 36px;
   }

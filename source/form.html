@@ -14,9 +14,9 @@
     <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="191" height="39" alt="Логотип Кэт энерджи»">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav__form">
       <div class="main-nav__wrapper">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
             <a href="index.html">Главная</a>
@@ -24,7 +24,7 @@
           <li class="main-nav__item">
             <a href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--selection">
             <a>Подбор программы</a>
           </li>
         </ul>
@@ -46,7 +46,7 @@
               <label class="form__label" for="weight-field">Вес (кг):*</label>
               <input class="form__input" id="weight-field" type="text" name="weight" value="" placeholder="7">
             </p>
-            <p class="form__field">
+            <p class="form__field form__field--age">
               <label class="form__label" for="age-field">Возраст (лет):</label>
               <input class="form__input" id="age-field" type="text" name="age" value="" placeholder="7">
             </p>
@@ -64,7 +64,7 @@
                 <label for="pro-item">
                   Набор массы </label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--advice">
                 <input type="radio" name="advice" value="" id="advice-item">
                 <label for="advice-item">
                   Не знаю (Нужен ваш совет)
