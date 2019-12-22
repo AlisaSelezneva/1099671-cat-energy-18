@@ -1,4 +1,6 @@
 .add-products {
+  position: relative;
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
@@ -116,6 +118,50 @@
   @media (min-width: $desktop-width) {
     padding-left: 0;
     border: none;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 45px;
+    right: 1px;
+    height: 3px;
+    width: 43px;
+    background-color: $apple;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      top: 25px;
+      left: 440px;
+      width: 338px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -45px;
+      left: 440px;
+      width: 1238px;
+    }
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 25px;
+      left: -5px;
+      width: 38px;
+      height: 3px;
+      background-color: $apple;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -45px;
+      left: -295px;
+      width: 300px;
+    }
   }
 }
 
