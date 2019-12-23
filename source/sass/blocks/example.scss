@@ -1,4 +1,5 @@
 .example {
+  position: relative;
   padding-top: 33px;
   padding-bottom: 39px;
   background-color: $gray-light;
@@ -48,7 +49,12 @@
 }
 
 .example__item {
+  display: flex;
+  justify-content: center;
+  height: 56px;
+
   @media (min-width: $tablet-width) {
+    height: 72px;
     margin-right: 42px;
   }
 
@@ -58,8 +64,10 @@
 }
 
 .example__value {
-  padding: 17px 15px 12px 15px;
-  margin-bottom: -7px;
+  padding: 17px 0 15px 0;
+  margin: 0;
+  width: 124px;
+  text-align: center;
   font-family: $additional-font;
   font-size: 24px;
   line-height: 24px;
@@ -69,34 +77,65 @@
   border-radius: 3px;
 
   @media (min-width: $tablet-width) {
-    padding: 16px 32px 20px 31px;
+    padding: 16px 20px 20px 20px;
+    width: 162px;
     font-size: 30px;
     line-height: 37px;
+  }
+
+  &--weight {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  &--time {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .example__parametr {
-  display: flex;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 20px;
+  position: absolute;
+  top: 309px;
+  margin: 0 0 30px 0;
+  padding: 0;
+  text-align: center;
   font-size: 12px;
   line-height: 12px;
   background-color: $gray-light;
 
   @media (min-width: $tablet-width) {
+    top: 362px;
     font-size: 14px;
     line-height: 14px;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 520px;
+    background-color: $bg-example;
+  }
+
+  &--weight {
+    width: 82px;
+
+    @media (min-width: $tablet-width) {
+      width: 112px;
+    }
   }
 
   &--time {
-    padding-left: 30px;
-    padding-right: 30px;
+    width: 86px;
+
+    @media (min-width: $tablet-width) {
+      width: 140px;
+    }
   }
 }
 
 .example__cost {
-  margin: 22px 0 44px 0;
+  display: block;
+  margin: 35px 0 44px 0;
   font-family: $additional-font;
   line-height: 20px;
   text-align: center;
@@ -107,13 +146,14 @@
     margin: 0;
     width: 174px;
     font-size: 20px;
+    line-height: 30px;
     display: flex;
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 48px;
-    text-align: center;
+    width: 374px;
   }
 }
 
