@@ -1,3 +1,11 @@
+.slider {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 68px;
+    background-color: $gray-light;
+    background-size: 100%;
+  }
+}
+
 .slider__list {
   @include nolist();
 

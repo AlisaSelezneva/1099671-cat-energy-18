@@ -14,6 +14,12 @@
   @media (min-width: $desktop-width) {
     margin-right: 40px;
   }
+
+  &:first-of-type {
+    @media (min-width: $desktop-width) {
+      border-top: $border-gray;
+    }
+  }
 }
 
 .add-products__item {
@@ -25,15 +31,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 28px 37px;
-    width: 708px;
-    border: $border-gray;
+    border-left: $border-gray;
+    border-right: $border-gray;
   }
 
   @media (min-width: $desktop-width) {
     width: 895px;
     padding: 15px 0 16px 0;
     margin: 0;
-    border-top: $border-gray;
     border-left: none;
     border-right: none;
   }
@@ -53,10 +58,11 @@
     margin: 0 0 26px 0;
     font-size: 20px;
     line-height: 20px;
+    width: 140px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 220px;
+    width: 305px;
     padding-top: 12px;
     margin: 0;
   }
@@ -74,12 +80,10 @@
     margin-top: 0;
     margin-bottom: 26px;
     padding: 0;
-    width: 230px;
   }
 
   @media (min-width: $desktop-width) {
     align-items: center;
-    width: 270px;
     margin: 0;
   }
 }
@@ -88,11 +92,24 @@
   @media (min-width: $tablet-width) {
     width: 140px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
+    text-align: left;
+    margin-right: 0;
+  }
+}
+
+.add-products__price {
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    text-align: right;
     margin-right: 43px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 220px;
+    width: 50px;
     text-align: left;
     margin-right: 0;
   }
@@ -100,13 +117,14 @@
 
 .add-products__subtitle {
   margin: 0;
-  padding: 31px 0 30px 0;
+  padding: 0;
   font-family: $additional-font;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: $gray-darken;
   border-bottom: $border-gray;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
     padding: 0 0 75px 37px;
@@ -118,50 +136,6 @@
   @media (min-width: $desktop-width) {
     padding-left: 0;
     border: none;
-  }
-
-  &::after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: 45px;
-    right: -24px;
-    height: 3px;
-    width: 21%;
-    background-color: $apple;
-    box-sizing: border-box;
-
-    @media (min-width: $tablet-width) {
-      top: 25px;
-      left: 440px;
-      width: 338px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: -45px;
-      left: 440px;
-      width: 1238px;
-    }
-  }
-
-  &::before {
-    @media (min-width: $tablet-width) {
-      content: "";
-      display: inline-block;
-      position: absolute;
-      top: 25px;
-      left: -5px;
-      width: 38px;
-      height: 3px;
-      background-color: $apple;
-      box-sizing: border-box;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: -45px;
-      left: -295px;
-      width: 300px;
-    }
   }
 }
 
