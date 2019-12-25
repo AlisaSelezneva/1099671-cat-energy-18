@@ -2,7 +2,7 @@
   background-color: $gray-light;
 
   @media (min-width: $tablet-width) {
-    padding: 51px 0 0 0;
+    padding: 51px 0 0 30px;
     background-color: $white;
   }
 
@@ -10,6 +10,19 @@
     display: flex;
     justify-content: space-between;
     padding-top: 63px;
+    padding-right: 110px;
+    background: linear-gradient(to top, $gray-light 70%, $white 30%);
+  }
+}
+
+.example__container {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    margin: 0;
   }
 }
 
@@ -21,6 +34,10 @@
   @media (min-width: $tablet-width) {
     @include subtitle-tablet();
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+  }
 }
 
 .example__description {
@@ -29,7 +46,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 60px 0 56px 0;
-    width: 674px;
+    width: 680px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,7 +59,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin: 56px 0 80px 0;
+    margin: 56px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -115,7 +132,7 @@
 
   @media (min-width: $desktop-width) {
     width: 147px;
-    background-color: $bg-example;
+    background-color: $gray-light;
   }
 }
 
@@ -130,7 +147,8 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    width: 174px;
+    padding-right: 19px;
+    width: 200px;
     font-size: 20px;
     line-height: 30px;
     display: flex;
