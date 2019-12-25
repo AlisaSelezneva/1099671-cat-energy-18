@@ -1,5 +1,8 @@
 .slider {
+  padding: 0 20px;
+
   @media (min-width: $tablet-width) {
+    padding: 0;
     background-size: 100%;
   }
 }
@@ -9,6 +12,8 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    align-items: flex-end;
+    margin-top: 80px;
   }
 }
 
@@ -17,8 +22,9 @@
 
   &--fat {
     @media (min-width: $tablet-width) {
-      padding-bottom: 95px;
       background: linear-gradient(to top, $gray-light 75%, $white 25%);
+      padding-bottom: 70px;
+      margin: 0;
     }
   }
 
@@ -26,11 +32,13 @@
     padding-bottom: 35px;
 
     @media (min-width: $tablet-width) {
+      padding-bottom: 70px;
+      margin: 0;
       background: linear-gradient(to top, $bg-example 75%, $white 25%);
     }
 
     @media (min-width: $desktop-width) {
-      padding-bottom: 75px;
+      padding-right: 75px;
     }
   }
 }
@@ -75,7 +83,7 @@
     @media (min-width: $tablet-width) {
       padding: 0;
       margin: 0;
-      height: 499px;
+      height: 498px;
       width: 335px;
     }
 

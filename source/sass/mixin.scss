@@ -28,3 +28,33 @@
   font-weight: 400;
   color: $gray-darken;
 }
+
+
+@mixin greenline () {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 43px;
+    left: 0;
+    z-index: -1;
+
+    display: block;
+    width: 100vw;
+    height: 3px;
+
+    background-color: $apple;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 102px;
+    }
+
+    &::after {
+      top: 102px;
+      right: 0;
+      left: auto;
+    }
+  }
+}

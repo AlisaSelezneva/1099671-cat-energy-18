@@ -9,8 +9,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    padding-top: 63px;
-    padding-right: 110px;
+    padding: 63px 0 0 0;
     background: linear-gradient(to top, $gray-light 70%, $white 30%);
   }
 }
@@ -156,7 +155,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 90px;
+    margin-top: 155px;
     width: 374px;
   }
 }
