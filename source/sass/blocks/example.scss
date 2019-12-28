@@ -2,13 +2,13 @@
   background-color: $gray-light;
 
   @media (min-width: $tablet-width) {
-    padding: 51px 0 0 30px;
+    padding: 51px 30px 0 30px;
     background-color: $white;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 63px 0 0 0;
     background: linear-gradient(to top, $gray-light 70%, $white 30%);
   }
@@ -49,7 +49,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 142px 0 71px 0;
+    margin: 100px 0 71px 0;
     width: 436px;
   }
 }
@@ -57,18 +57,17 @@
 .example__desktop {
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
     margin: 56px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
     flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
 .example__list {
   display: flex;
-  justify-content: space-between;
 
   @include nolist();
 }
@@ -80,10 +79,10 @@
   text-align: center;
 
   &:nth-child(odd) {
-    margin-right: 32px;
+    margin: 0 32px 0 0;
 
     @media (min-width: $tablet-width) {
-      margin-right: 42px;
+      margin: 0 42px 0 0;
     }
   }
 }
@@ -123,14 +122,13 @@
   background-color: $gray-light;
 
   @media (min-width: $tablet-width) {
-    width: 150px;
+    width: auto;
     font-size: 14px;
     line-height: 14px;
     background-color: $white;
   }
 
   @media (min-width: $desktop-width) {
-    width: 147px;
     background-color: $gray-light;
   }
 }
@@ -147,7 +145,7 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     padding-right: 19px;
-    width: 200px;
+    padding-left: 145px;
     font-size: 20px;
     line-height: 30px;
     display: flex;
@@ -156,6 +154,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 155px;
-    width: 374px;
+    padding-left: 5px;
+    z-index: 15;
   }
 }

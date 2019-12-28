@@ -29,32 +29,57 @@
   color: $gray-darken;
 }
 
-
 @mixin greenline () {
-  &::before,
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     top: 43px;
     left: 0;
     z-index: -1;
-
-    display: block;
     width: 100vw;
     height: 3px;
-
     background-color: $apple;
   }
 
   @media (min-width: $tablet-width) {
     &::before {
-      top: 102px;
+      top: 22px;
+      left: 90%;
+      transform: translateX(-50%);
     }
+  }
 
-    &::after {
-      top: 102px;
-      right: 0;
-      left: auto;
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: 22px;
+      left: 150%;
+    }
+  }
+}
+
+@mixin greenline-form () {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 43px;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 3px;
+    background-color: $apple;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 100px;
+      left: 60%;
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      left: 150%;
     }
   }
 }

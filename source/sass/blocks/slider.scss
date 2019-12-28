@@ -1,52 +1,33 @@
 .slider {
-  padding: 0 20px;
+  margin-top: 72px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 170px;
     padding: 0;
-    background-size: 100%;
+    background: linear-gradient(to right, $gray-light 50%, $bg-example 50%);
   }
 }
 
-.slider__list {
-  @include nolist();
-
+.slider__images {
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: flex-end;
-    margin-top: 80px;
-  }
-}
-
-.slider__item {
-  width: 100%;
-
-  &--fat {
-    @media (min-width: $tablet-width) {
-      background: linear-gradient(to top, $gray-light 75%, $white 25%);
-      padding-bottom: 70px;
-      margin: 0;
-    }
+    height: 384px;
+    padding-left: 30px;
   }
 
-  &--slim {
-    padding-bottom: 35px;
-
-    @media (min-width: $tablet-width) {
-      padding-bottom: 70px;
-      margin: 0;
-      background: linear-gradient(to top, $bg-example 75%, $white 25%);
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-right: 75px;
-    }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: flex-end;
+    height: 384px;
+    padding-left: 30px;
   }
 }
 
 .slider__toggles {
   display: flex;
   justify-content: space-between;
-  margin-top: -10px;
+  margin-top: 10px;
   padding-left: 67px;
   padding-right: 69px;
   padding-bottom: 25px;
@@ -54,7 +35,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 70px;
     padding-right: 95px;
-    margin-top: -55px;
+    margin-bottom: 0;
   }
 }
 
@@ -81,8 +62,8 @@
 
   &--fat {
     @media (min-width: $tablet-width) {
-      padding: 0;
       margin: 0;
+      padding: 75px 0 0 0;
       height: 498px;
       width: 335px;
     }
@@ -94,7 +75,6 @@
 
   &--slim {
     @media (min-width: $tablet-width) {
-      padding: 0;
       margin: 0;
       height: 517px;
       width: 298px;
