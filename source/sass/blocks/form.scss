@@ -10,6 +10,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    margin-top: 70px;
   }
 }
 
@@ -34,6 +35,100 @@
   &--programs {
     @media (min-width: $desktop-width) {
       width: 570px;
+    }
+  }
+
+  &--contacts {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 70%;
+      z-index: -1;
+      width: 100vw;
+      height: 3px;
+      background-color: $apple;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::before {
+        top: 23px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-right: 67px;
+      padding-left: 38px;
+    }
+  }
+
+  &--comment {
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 67px;
+      padding-left: 38px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      z-index: -1;
+      width: 100vw;
+      height: 3px;
+      background-color: $apple;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::before {
+        top: 40px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        top: 40px;
+      }
+    }
+  }
+
+  &--add {
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 67px;
+      padding-left: 38px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 82px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 55%;
+      z-index: -1;
+      width: 100vw;
+      height: 3px;
+      background-color: $apple;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::before {
+        top: 43px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        top: 40px;
+      }
     }
   }
 }
@@ -113,6 +208,8 @@
 
 .form__textarea {
   padding: 15px 13px;
+  margin-top: 31px;
+  border-top: $border-gray;
   width: 100%;
   font-family: $additional-font;
   font-size: 16px;
@@ -159,6 +256,7 @@
 
     @media (min-width: $desktop-width) {
       justify-content: space-between;
+      margin-top: 53px;
     }
   }
 
@@ -216,7 +314,7 @@
 
 .form__note {
   padding: 0;
-  margin: 23px 0 0 0;
+  margin: 23px 0 34px 0;
   line-height: 16px;
   font-family: "Arial", sans-serif;
   text-align: center;
