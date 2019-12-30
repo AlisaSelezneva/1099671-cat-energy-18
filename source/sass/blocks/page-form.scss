@@ -5,11 +5,12 @@
 .page-form__title {
   @include subtitle();
   margin: 0;
-  padding: 30px 0 0 0;
+  padding: 30px 0 35px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    padding: 53px 0 69px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,26 +28,26 @@
   color: $gray-darken;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 69px 0;
+    margin: 0 0 60px 0;
+    padding-left: 38px;
     font-size: 20px;
     line-height: 30px;
-    width: 342px;
+    width: 362px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 53px 0 0 0;
+    padding-left: 0;
   }
 }
 
 
 .page-form__wrapper {
-  padding-top: 35px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     padding-top: 53px;
     padding-right: 67px;
-    padding-left: 38px;
   }
 
   @media (min-width: $desktop-width) {

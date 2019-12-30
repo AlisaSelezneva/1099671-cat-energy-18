@@ -1,6 +1,4 @@
 .form {
-  padding-bottom: 34px;
-
   @media (min-width: $tablet-width) {
     padding-bottom: 72px;
   }
@@ -27,12 +25,21 @@
   }
 
   &--main {
+    @media (min-width: $tablet-width) {
+      padding-left: 38px;
+    }
+
     @media (min-width: $desktop-width) {
       width: 568px;
+      padding-left: 0;
     }
   }
 
   &--programs {
+    @media (min-width: $tablet-width) {
+      padding-left: 38px;
+    }
+
     @media (min-width: $desktop-width) {
       width: 570px;
     }
@@ -59,8 +66,13 @@
     }
 
     @media (min-width: $tablet-width) {
-      padding-right: 67px;
       padding-left: 38px;
+      margin-bottom: 69px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+      margin-bottom: 69px;
     }
   }
 
@@ -68,8 +80,13 @@
     position: relative;
 
     @media (min-width: $tablet-width) {
-      padding-right: 67px;
       padding-left: 38px;
+      margin-bottom: 69px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+      margin-bottom: 69px;
     }
 
     &::before {
@@ -100,8 +117,7 @@
     position: relative;
 
     @media (min-width: $tablet-width) {
-      padding-right: 67px;
-      padding-left: 38px;
+      padding-left: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -133,12 +149,6 @@
   }
 }
 
-.form__secondary {
-  @media (min-width: $tablet-width) {
-    display: flex;
-  }
-}
-
 .form__label {
   color: $gray-darkest;
 
@@ -163,6 +173,12 @@
   }
 
   &--email {
+    margin-top: 30px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 70px;
+    }
+
     @media (min-width: $desktop-width) {
       width: 486px;
     }
@@ -233,7 +249,7 @@
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 72px 0 0 0;
     padding: 25px 0 25px 28px;
     font-size: 20px;
     line-height: 20px;
@@ -249,6 +265,7 @@
     @media (min-width: $tablet-width) {
       display: flex;
       flex-wrap: wrap;
+      padding-left: 0;
       font-size: 20px;
       line-height: 20px;
       border: none;
@@ -312,6 +329,13 @@
   }
 }
 
+.form__secondary {
+  @media (min-width: $tablet-width) {
+    margin: 0 0 72px 0;
+    padding-left: 0;
+  }
+}
+
 .form__note {
   padding: 0;
   margin: 23px 0 34px 0;
@@ -319,6 +343,11 @@
   font-family: "Arial", sans-serif;
   text-align: center;
   text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin: -30px 0 0 0;
+  }
 
   @media (min-width: $desktop-width) {
     margin-left: 72px;
