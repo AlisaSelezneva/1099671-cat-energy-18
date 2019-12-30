@@ -1,31 +1,20 @@
 .page-form {
-  @media (min-width: $tablet-width) {
-    padding-right: 67px;
-    padding-left: 38px;
-  }
-}
-
-.page-form__wrapper {
-  padding: 35px 0 0 0;
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    padding: 53px 0 0 38px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 53px 0 0 0;
-  }
+  position: relative;
 }
 
 .page-form__title {
   @include subtitle();
   margin: 0;
-  padding: 30px 0 0 0;
+  padding: 30px 0 35px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    padding: 53px 0 69px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
 
@@ -39,23 +28,32 @@
   color: $gray-darken;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 69px 0;
+    margin: 0 0 60px 0;
+    padding-left: 38px;
     font-size: 20px;
     line-height: 30px;
-    width: 342px;
+    width: 362px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 53px 0 0 0;
+    padding-left: 0;
   }
 }
 
-.page-form__subtitle {
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  color: $gray-darken;
-  text-transform: none;
+
+.page-form__wrapper {
+  margin: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 69px 0 53px 0;
-    font-size: 36px;
-    line-height: 36px;
+    padding-top: 53px;
+    padding-right: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0;
   }
 }

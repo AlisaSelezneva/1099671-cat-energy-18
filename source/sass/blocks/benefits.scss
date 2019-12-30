@@ -6,6 +6,10 @@
     padding-bottom: 58px;
     border-bottom: $border-gray;
   }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+  }
 }
 
 .benefits__list {

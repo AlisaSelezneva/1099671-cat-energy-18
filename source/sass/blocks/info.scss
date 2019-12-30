@@ -34,7 +34,7 @@
 
     @media (min-width: $tablet-width) {
       padding-right: 67px;
-      padding-left: 73px;
+      padding-left: 55px;
       margin: auto;
     }
 
@@ -94,6 +94,7 @@
 
 .info__map {
   padding: 0;
+  margin: 0;
   width: 100%;
 
   @media (min-width: $tablet-width) {
