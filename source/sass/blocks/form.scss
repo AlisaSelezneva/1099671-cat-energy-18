@@ -12,6 +12,44 @@
   }
 }
 
+.form-group__wrapper {
+  padding: 0;
+  margin: 0;
+  font-family: $additional-font;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-style: none;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    z-index: -1;
+    width: 100vw;
+    height: 3px;
+    background-color: $apple;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: 40px;
+      left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .form__group {
   padding: 0;
   margin: 0;
@@ -42,109 +80,6 @@
 
     @media (min-width: $desktop-width) {
       width: 570px;
-    }
-  }
-
-  &--contacts {
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 25px;
-      left: 70%;
-      z-index: -1;
-      width: 100vw;
-      height: 3px;
-      background-color: $apple;
-    }
-
-    @media (min-width: $tablet-width) {
-      &::before {
-        top: 23px;
-      }
-    }
-
-    @media (min-width: $tablet-width) {
-      padding-left: 38px;
-      margin-bottom: 69px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-left: 0;
-      margin-bottom: 69px;
-    }
-  }
-
-  &--comment {
-    position: relative;
-
-    @media (min-width: $tablet-width) {
-      padding-left: 38px;
-      margin-bottom: 69px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-left: 0;
-      margin-bottom: 69px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 30px;
-      left: 50%;
-      z-index: -1;
-      width: 100vw;
-      height: 3px;
-      background-color: $apple;
-    }
-
-    @media (min-width: $tablet-width) {
-      &::before {
-        top: 40px;
-      }
-    }
-
-    @media (min-width: $desktop-width) {
-      &::before {
-        top: 40px;
-      }
-    }
-  }
-
-  &--add {
-    position: relative;
-
-    @media (min-width: $tablet-width) {
-      padding-left: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-bottom: 82px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 30px;
-      left: 55%;
-      z-index: -1;
-      width: 100vw;
-      height: 3px;
-      background-color: $apple;
-    }
-
-    @media (min-width: $tablet-width) {
-      &::before {
-        top: 43px;
-      }
-    }
-
-    @media (min-width: $desktop-width) {
-      &::before {
-        top: 40px;
-      }
     }
   }
 }
@@ -181,6 +116,7 @@
 
     @media (min-width: $desktop-width) {
       width: 486px;
+      margin-top: 0;
     }
   }
 
@@ -234,9 +170,6 @@
   @media (min-width: $tablet-width) {
     padding: 17px 20px;
     border: $border-gray;
-  }
-
-  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
@@ -332,7 +265,7 @@
 .form__secondary {
   @media (min-width: $tablet-width) {
     margin: 0 0 72px 0;
-    padding-left: 0;
+    padding-left: 30px;
   }
 }
 

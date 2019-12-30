@@ -19,15 +19,23 @@
     padding: 0 37px 75px -37px;
     border: none;
   }
+}
 
-  &--form {
-    text-transform: none;
-    color: $gray-darken;
-    font-weight: 400;
+.title__form {
+  display: inline-block;
+  margin: 0;
+  padding: 0 15px 0 0;
+  font-family: $additional-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $gray-darken;
+  background-color: $white;
+  text-transform: none;
 
-    @media (min-width: $tablet-width) {
-      font-size: 36px;
-      line-height: 36px;
-    }
+  @media (min-width: $tablet-width) {
+    padding: 0 15px 0 15px;
+    font-size: 36px;
+    line-height: 36px;
   }
 }

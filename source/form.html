@@ -39,7 +39,7 @@
       </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form__wrapper">
-          <fieldset class="form__group form__group--main">
+          <fieldset class="form__group">
             <p class="form__field">
               <label class="form__label" for="user-name">Имя:*</label>
               <input class="form__input" id="user-name" type="text" name="user" value="" placeholder="Барсик">
@@ -77,10 +77,10 @@
         </div>
     </div>
     </div>
-    <fieldset class="form__group form__group--contacts">
+    <div class="form-group__wrapper">
       <div class="container">
         <h2 class="title">
-          <span class="title__text--form">Контактные данные (владельца кота)</span>
+          <span class="title__form">Контактные данные (владельца кота)</span>
         </h2>
         <div class="form__wrapper">
           <p class="form__field form__field--email">
@@ -94,19 +94,19 @@
         </div>
       </div>
       </section>
-    </fieldset>
-    <fieldset class="form__group form__group--comment">
+    </div>
+    <div class="form-group__wrapper">
       <div class="container">
         <h2 class="title">
-          <span class="title__text--form">Комментарий</span>
+          <span class="title__form">Комментарий</span>
         </h2>
         <textarea class="form__textarea" id="text-field" rows="5" cols="30" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
       </div>
-    </fieldset>
-    <fieldset class="form__group form__group--add">
+    </div>
+    <div class="form-group__wrapper">
       <div class="container">
         <h2 class="title">
-          <span class="title__text--form">Дополнительно</span>
+          <span class="title__form">Дополнительно</span>
         </h2>
         <ul class="form__list form__list--checkbox">
           <li class="form__item form__item--checkbox">
@@ -135,15 +135,14 @@
           </li>
         </ul>
       </div>
-      <div class="form__secondary">
-        <div class="container">
-          <button class="form__button button" type="submit">Отправить заявку</button>
-          <p class="form__note">* — Обязательные поля</p>
-        </div>  
-      </div>
-    </fieldset>
-    </form>
     </div>
+    <div class="form__secondary">
+      <div class="container">
+        <button class="form__button button" type="submit">Отправить заявку</button>
+        <p class="form__note">* — Обязательные поля</p>
+      </div>
+    </div>
+    </form>
   </main>
   <footer class="page-footer">
     <div class="info container">
