@@ -135,8 +135,12 @@
 }
 
 .production__image {
+  width: 140px;
+  height: 144px;
+
   @media (min-width: $tablet-width) {
     display: flex;
+    align-items: stretch;
     width: 161px;
     height: 172px;
   }

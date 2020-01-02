@@ -1,4 +1,6 @@
 .page-header {
+  padding-top: 11px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -14,4 +16,14 @@
     align-items: center;
     height: 60px;
   }
+}
+
+.page-header__logo-image {
+  width: 141px;
+  height: 39px;
+
+    @media (min-width: $tablet-width) {
+      width: 174px;
+      height: 59px;
+    }
 }

@@ -16,6 +16,7 @@
 .programs__item {
   padding: 22px 20px 22px 20px;
   background-color: $gray-light;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 80px 62px 62px 55px;
@@ -30,6 +31,22 @@
     @media (min-width: $desktop-width) {
       margin-right: 80px;
     }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-color: $apple;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+  }
+
+  &--pro::before  {
+    background-image: url("../img/icon-cat-pro.svg");
   }
 }
 
@@ -46,7 +63,8 @@
 }
 
 .programs__title {
-  padding: 0;
+  position: relative;
+  padding: 0 0 0 70px;
   margin: 0;
   font-family: $additional-font;
   font-size: 24px;
