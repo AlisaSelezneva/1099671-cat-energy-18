@@ -5,7 +5,6 @@
 
   @media (min-width: $desktop-width) {
     align-items: flex-start;
-    background-color: $apple;
     background-repeat: no-repeat;
     z-index: 15;
   }
@@ -15,6 +14,7 @@
 .main-nav__form {
   @media (min-width: $desktop-width) {
     background-color: $white;
+    color: $gray-darkest;
   }
 }
 
@@ -54,6 +54,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
+    color: $gray-darkest;
   }
 
   &--selection {
@@ -62,6 +63,12 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+  }
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: $white;
+    }
   }
 }
 

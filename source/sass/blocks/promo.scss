@@ -1,5 +1,6 @@
 // файл promo.scss
 .promo {
+  position: relative;
   padding: 29px 17px 22px 18px;
   font-family: $additional-font;
   text-align: center;
@@ -21,15 +22,30 @@
     position: relative;
     padding: 31px 30px 0 0;
     min-height: 656px;
-    background-image: url("../img/index-background-desktop@1x.jpg");
     background-position: right;
   }
-  /*
-  @media (min-resolution: 144dpi),
-    (min-resolution: $retina-dppx) {
-    background-image: url("../img/index-background-desktop@2x.jpg");
-    background-size: 50%;
-  }*/
+
+  &::before {
+    @media (min-width: $desktop-width) {
+      content: "";
+      position: absolute;
+      margin-top: -95px;
+      top: 0;
+      left: 50%;
+      z-index: 10;
+      width: 720px;
+      height: 696px;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
+  }
 }
 
 .promo__title {
@@ -85,6 +101,7 @@
     left: 408px;
     width: 552px;
     height: 499px;
+    z-index: 10;
   }
 }
 

@@ -23,7 +23,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     padding: 64px 30px 62px 31px;
   }
 
@@ -38,4 +38,8 @@
   margin: 0;
   padding-top: 39px;
   padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+  }
 }
