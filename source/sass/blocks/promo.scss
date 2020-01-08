@@ -8,6 +8,13 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-color: $white;
   background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 100%;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -91,7 +98,7 @@
   @media (min-width: $tablet-width) {
     margin: -80px 30px 0 30px;
     width: 709px;
-    height: 609px;
+    height: auto;
     order: 2;
   }
 
@@ -100,7 +107,7 @@
     top: 130px;
     left: 408px;
     width: 552px;
-    height: 499px;
+    height: auto;
     z-index: 10;
   }
 }
@@ -109,6 +116,8 @@
   z-index: 15;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 245px;
     margin: 20px 0 0 120px;
     padding: 17px 20px 15px 20px;
     font-size: 20px;

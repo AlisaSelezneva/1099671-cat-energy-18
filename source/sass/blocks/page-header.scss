@@ -8,22 +8,20 @@
 }
 
 .page-header__logo {
-  height: 39px;
+  height: auto;
 
   @media (min-width: $tablet-width) {
     display: flex;
     margin: 24px 0 0 0;
     align-items: center;
-    height: 60px;
   }
 }
 
 .page-header__logo-image {
   width: 141px;
-  height: 39px;
+  height: auto;
 
   @media (min-width: $tablet-width) {
     width: 174px;
-    height: 59px;
   }
 }
