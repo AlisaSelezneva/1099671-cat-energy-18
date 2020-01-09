@@ -24,7 +24,7 @@
 .title__form {
   display: inline-block;
   margin: 0;
-  padding: 0 15px 0 0;
+  padding: 0 15px 0 15px;
   font-family: $additional-font;
   font-size: 24px;
   line-height: 24px;
@@ -37,5 +37,13 @@
     padding: 0 15px 0 15px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  &--contacts {
+    width: 215px;
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+    }
   }
 }

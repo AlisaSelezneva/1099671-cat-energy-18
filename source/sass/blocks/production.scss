@@ -134,8 +134,4 @@
 
 .production__image {
   width: 100%;
-
-  @media (min-width: $tablet-width) {
-    align-items: stretch;
-  }
 }

@@ -24,8 +24,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 20px;
-    left: 50%;
+    top: 10px;
+    left: 0;
     z-index: -1;
     width: 100vw;
     height: 3px;
@@ -34,6 +34,7 @@
 
   @media (min-width: $tablet-width) {
     &::before {
+      top: 20px;
       left: 0;
     }
   }
