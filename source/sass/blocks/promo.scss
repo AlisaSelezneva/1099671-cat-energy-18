@@ -1,5 +1,6 @@
 // файл promo.scss
 .promo {
+  position: relative;
   padding: 29px 17px 22px 18px;
   font-family: $additional-font;
   text-align: center;
@@ -7,6 +8,13 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-color: $white;
   background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 100%;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -21,6 +29,30 @@
     position: relative;
     padding: 31px 30px 0 0;
     min-height: 656px;
+    background-position: right;
+  }
+
+  &::before {
+    width: 50vw;
+
+    @media (min-width: $desktop-width) {
+      content: "";
+      position: absolute;
+      margin-top: -95px;
+      top: 0;
+      left: 50%;
+      z-index: 10;
+      height: 696px;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 }
 
@@ -67,7 +99,7 @@
   @media (min-width: $tablet-width) {
     margin: -80px 30px 0 30px;
     width: 709px;
-    height: 499px;
+    height: auto;
     order: 2;
   }
 
@@ -76,6 +108,8 @@
     top: 130px;
     left: 408px;
     width: 552px;
+    height: auto;
+    z-index: 10;
   }
 }
 
@@ -83,6 +117,8 @@
   z-index: 15;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 245px;
     margin: 20px 0 0 120px;
     padding: 17px 20px 15px 20px;
     font-size: 20px;

@@ -31,7 +31,6 @@
 
   @media (min-width: $tablet-width) {
     justify-content: center;
-    padding: 0 37px 40px 39px;
     margin-bottom: 150px;
     width: 324px;
     background: $bg-example;
@@ -40,7 +39,6 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    padding: 0 39px 40px 40px;
   }
 
   &:nth-child(odd) {
@@ -135,16 +133,5 @@
 }
 
 .production__image {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    width: 161px;
-    height: 172px;
-  }
-
-  &--big {
-    @media (min-width: $tablet-width) {
-      width: 195px;
-      height: 208px;
-    }
-  }
+  width: 100%;
 }

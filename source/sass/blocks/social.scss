@@ -1,6 +1,8 @@
 .social__list {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color: $gray-light;
   border-top: $border-gray;
   border-bottom: $border-gray;
@@ -14,4 +16,42 @@
 
 .social__item {
   padding: 22px 20px 21px 20px;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+  }
+}
+
+.social__svg {
+  fill: $brownish-gray;
+
+  &--vk {
+    width: 22px;
+    height: 12px;
+
+    @media (min-width: $tablet-width) {
+      width: 30px;
+      height: 16px;
+    }
+  }
+
+  &--ig {
+    width: 17px;
+    height: 17px;
+
+    @media (min-width: $tablet-width) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &--fb {
+    width: 10px;
+    height: 19px;
+
+    @media (min-width: $tablet-width) {
+      width: 14px;
+      height: 28px;
+    }
+  }
 }
