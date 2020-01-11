@@ -1,4 +1,9 @@
 .bonus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px;
   margin-top: 39px;
   margin-bottom: 35px;
   width: 100%;
@@ -19,12 +24,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 200px;
     margin-top: 69px;
     margin-bottom: 76px;
-    padding-top: 75px;
-    padding-bottom: 69px;
+    padding: 75px 125px 69px 91px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-size: contain;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
@@ -33,10 +40,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    flex-direction: column;
     width: 245px;
     margin: 0;
     padding: 65px 43px 43px 43px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-size: cover;
+    min-height: 289px;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
@@ -53,9 +63,24 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     text-align: center;
+  }
+}
+
+.bonus__svg {
+  width: 56px;
+  height: 61px;
+  fill: $white;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }

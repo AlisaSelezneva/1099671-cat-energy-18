@@ -60,3 +60,21 @@
     align-self: center;
   }
 }
+
+.show-more__plus {
+  width: 30px;
+  height: 30px;
+  margin-left: 120px;
+  padding: 0;
+  background-image: url("../../img/icon-plus-mobile.svg");
+  background-repeat: no-repeat;
+  opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    width: 61px;
+    height: 61px;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-image: url("../../img/icon-plus.svg");
+  }
+}
