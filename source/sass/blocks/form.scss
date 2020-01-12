@@ -87,10 +87,107 @@
 
 .form__label {
   color: $gray-darkest;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  &--radio {
+    padding-top: 1px;
+    padding-left: 45px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 55px;
+    }
+  }
+
+  &--radio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $pinkish-gray;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &--checkbox {
+    padding-top: 11px;
+    padding-left: 45px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 55px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border: 1px solid $pinkish-gray;
+      top: 10px;
+      left: 0;
+
+      @media (min-width: $tablet-width) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+.form__checkbox:checked + .form__label--checkbox::after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: 5px;
+  width: 22px;
+  height: 17px;
+  background-image: url("../img/tick-svg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  fill: $apple;
+
+
+  @media (min-width: $tablet-width) {
+    top: 22px;
+    left: 11px;
+  }
+}
+
+.form__radio,
+.form__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px;
+}
+
+.form__radio-button:checked + .form__label--radio::after {
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 9px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $apple;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+    top: 10px;
+    left: 11px;
   }
 }
 
@@ -220,7 +317,7 @@
 }
 
 .form__item {
-  margin-bottom: 13px;
+  margin-bottom: 23px;
   color: $gray-darkest;
   border-color: $pinkish-gray;
 
