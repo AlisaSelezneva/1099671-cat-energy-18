@@ -18,6 +18,16 @@
   }
 }
 
+.main-nav__form {
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+}
+
 .main-nav__list {
   @include nolist();
 
@@ -44,7 +54,7 @@
   border-top: $border-gray;
 
   @media (min-width: $tablet-width) {
-    padding: 23px 36px 0 0;
+    padding: 7px 36px 0 0;
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
@@ -53,6 +63,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 13px 36px 0 0;
     font-size: 20px;
     color: $gray-darkest;
   }
@@ -73,6 +84,12 @@
 }
 
 .main-nav__toggle {
+  width: 19px;
+  height: 19px;
+  border: none;
+  background: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
