@@ -18,17 +18,10 @@
 }
 
 .page-header__logo-image {
-  width: 191px;
+  width: 141px;
   height: auto;
 
   @media (min-width: $tablet-width) {
     width: 174px;
   }
-}
-
-.page-header__mobile {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 15px;
 }

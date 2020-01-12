@@ -90,8 +90,6 @@
 }
 
 .slider__image {
-  width: 100%;
-
   @media (min-width: $tablet-width) {
     height: 517px;
   }
@@ -100,6 +98,11 @@
     @media (min-width: $tablet-width) {
       margin: 0;
       padding: 75px 0 0 0;
+      height: 498px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 365px;
     }
   }
 
@@ -107,6 +110,11 @@
     @media (min-width: $tablet-width) {
       margin: 0;
       height: 517px;
+      width: 298px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 271px;
     }
   }
 }
