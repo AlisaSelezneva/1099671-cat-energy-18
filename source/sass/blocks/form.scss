@@ -146,18 +146,22 @@
   }
 }
 
-.form__checkbox:checked + .form__label--checkbox::after {
+.form__tick {
   position: absolute;
-  content: "";
-  top: 15px;
-  left: 5px;
+  left: 25px;
   width: 22px;
   height: 17px;
-  background-image: url("../img/tick-svg.svg");
+  fill: $apple;
+}
+
+.form__checkbox:checked + .form__tick {
+  position: absolute;
+  left: 25px;
+  width: 22px;
+  height: 17px;
+  fill: $apple;
   background-repeat: no-repeat;
   background-size: contain;
-  fill: $apple;
-
 
   @media (min-width: $tablet-width) {
     top: 22px;
@@ -173,15 +177,21 @@
   margin: 10px 0 0 20px;
 }
 
-.form__radio-button:checked + .form__label--radio::after {
+.form__radio:checked,
+.form__radio:not(:checked) {
+  display: none;
+}
+
+.form__radio:checked + .form__label--radio::before,
+.form__radio:not(:checked) + .form__label--radio::before {
   position: absolute;
   content: "";
-  top: 9px;
-  left: 9px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: $apple;
+  left: 0;
+  top: 0;
+  width: 29px;
+  height: 29px;
+  border: 1px solid $pinkish-gray;
+  border-radius: 100%;
 
   @media (min-width: $tablet-width) {
     width: 18px;
@@ -189,6 +199,17 @@
     top: 10px;
     left: 11px;
   }
+}
+
+.form__radio:checked + .form__label--radio::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  background-color: $apple;
+  border-radius: 100%;
 }
 
 .form__field {
@@ -383,4 +404,16 @@
   @media (min-width: $desktop-width) {
     margin-left: 72px;
   }
+}
+
+
+.form__checkbox:checked + .form__label--checkbox::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 15px;
+  width: 21px;
+  height: 16px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
 }
