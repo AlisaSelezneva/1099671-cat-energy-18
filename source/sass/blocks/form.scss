@@ -99,7 +99,8 @@
     padding-left: 45px;
 
     @media (min-width: $tablet-width) {
-      padding-left: 55px;
+      padding-top: 15px;
+      padding-left: 75px;
     }
   }
 
@@ -194,8 +195,8 @@
   border-radius: 100%;
 
   @media (min-width: $tablet-width) {
-    width: 18px;
-    height: 18px;
+    width: 40px;
+    height: 40px;
     top: 10px;
     left: 11px;
   }
@@ -210,6 +211,13 @@
   height: 12px;
   background-color: $apple;
   border-radius: 100%;
+
+  @media (min-width: $tablet-width) {
+    left: 22px;
+    top: 21px;
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .form__field {
@@ -343,6 +351,7 @@
   border-color: $pinkish-gray;
 
   @media (min-width: $tablet-width) {
+    margin-top: 15px;
     margin-bottom: 32px;
   }
 

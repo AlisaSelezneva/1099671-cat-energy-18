@@ -25,7 +25,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
     display: inline-block;
     margin-top: -100px;
     width: 100%;
@@ -45,18 +44,19 @@
     &--fat {
       left: 10px;
 
-      @media (min-width: $desktop-width) {
-        width: 50%;
+      @media (min-width: $tablet-width) {
+        width: 57%;
+        left: -44px;
       }
     }
 
     &--slim {
-      @media (min-width: $desktop-width) {
+      @media (min-width: $tablet-width) {
         display: flex;
         flex-direction: row-reverse;
         left: 310px;
         right: 0;
-        width: 53%;
+        width: 52%;
       }
     }
   }
@@ -112,7 +112,7 @@
     @media (min-width: $tablet-width) {
       height: 499px;
       margin: 0;
-      padding: 75px 0 0 0;
+      padding: 0;
     }
   }
 
