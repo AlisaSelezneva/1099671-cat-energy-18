@@ -147,40 +147,6 @@
   }
 }
 
-.form__tick {
-  top: 2px;
-  left: 4px;
-  position: absolute;
-  width: 22px;
-  height: 17px;
-  fill: $apple;
-}
-
-.form__checkbox:checked + .form__tick::after {
-  content: "";
-  position: absolute;
-  left: 6px;
-  top: 15px;
-  width: 21px;
-  height: 16px;
-  background-repeat: no-repeat;
-}
-
-.form__checkbox:checked + .form__tick {
-  position: absolute;
-  left: 25px;
-  width: 22px;
-  height: 17px;
-  fill: $apple;
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  @media (min-width: $tablet-width) {
-    top: 22px;
-    left: 11px;
-  }
-}
-
 .form__radio,
 .form__checkbox {
   position: absolute;
@@ -188,6 +154,7 @@
   opacity: 0;
   margin: 10px 0 0 20px;
 }
+
 
 .form__radio:checked,
 .form__radio:not(:checked) {
@@ -332,7 +299,7 @@
     padding-bottom: 43px;
   }
 
-  &-- {
+  &--checkbox {
     @media (min-width: $tablet-width) {
       display: flex;
       flex-wrap: wrap;
@@ -426,4 +393,25 @@
   @media (min-width: $desktop-width) {
     margin-left: 72px;
   }
+}
+
+.form__tick {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  width: 22px;
+  height: 17px;
+  opacity: 0;
+  fill: $apple;
+
+  @media (min-width: $tablet-width) {
+    top: 4px;
+    left: 10px;
+    width: 21px;
+    height: 16px;
+  }
+}
+
+.form__checkbox:checked ~ .form__tick {
+  opacity: 1;
 }

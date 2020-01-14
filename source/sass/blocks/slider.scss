@@ -34,33 +34,44 @@
 
 .slider__images-wrap {
   @media (min-width: $tablet-width) {
+    overflow: hidden;
     position: absolute;
   }
 
   @media (min-width: $desktop-width) {
-    overflow: hidden;
     top: 0;
+  }
 
-    &--fat {
-      left: 10px;
+  &--fat {
+    left: 10px;
 
-      @media (min-width: $tablet-width) {
-        width: 57%;
-        left: -44px;
-      }
+    @media (min-width: $tablet-width) {
+      width: 50%;
+      left: 30px;
     }
 
-    &--slim {
-      @media (min-width: $tablet-width) {
-        display: flex;
-        flex-direction: row-reverse;
-        left: 310px;
-        right: 0;
-        width: 52%;
-      }
+    @media (min-width: $desktop-width) {
+      width: 57%;
+      left: -44px;
+    }
+  }
+
+  &--slim {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: row-reverse;
+      left: 355px;
+      right: 0;
+      width: 50%;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 310px;
+      width: 52%;
     }
   }
 }
+
 
 .slider__toggles {
   display: flex;
