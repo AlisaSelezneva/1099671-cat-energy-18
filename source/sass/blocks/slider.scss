@@ -1,4 +1,5 @@
 .slider {
+  position: relative;
   margin-top: 72px;
 
   @media (min-width: $tablet-width) {
@@ -14,39 +15,63 @@
 }
 
 .slider__images {
+  position: relative;
+  display: flex;
+
   @media (min-width: $tablet-width) {
-    display: flex;
     align-items: flex-end;
     height: 384px;
     padding-left: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
     display: inline-block;
     margin-top: -100px;
     width: 100%;
-    height: 384px;
     padding-left: 30px;
   }
 }
 
 .slider__images-wrap {
-  @media (min-width: $desktop-width) {
-    width: 50%;
+  @media (min-width: $tablet-width) {
     overflow: hidden;
     position: absolute;
-    top: 0;
+  }
 
-    &--fat {
-      left: 0;
+  @media (min-width: $desktop-width) {
+    top: 0;
+  }
+
+  &--fat {
+    left: 10px;
+
+    @media (min-width: $tablet-width) {
+      width: 50%;
+      left: 30px;
     }
 
-    &--slim {
-      right: 15px;
+    @media (min-width: $desktop-width) {
+      width: 57%;
+      left: -44px;
+    }
+  }
+
+  &--slim {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: row-reverse;
+      left: 355px;
+      right: 0;
+      width: 50%;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 310px;
+      width: 52%;
     }
   }
 }
+
 
 .slider__toggles {
   display: flex;
@@ -64,7 +89,6 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    position: absolute;
     margin-top: 150px;
   }
 }
@@ -86,6 +110,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 10px;
+    background-color: inherit;
   }
 }
 
@@ -96,25 +121,23 @@
 
   &--fat {
     @media (min-width: $tablet-width) {
+      height: 499px;
       margin: 0;
-      padding: 75px 0 0 0;
-      height: 498px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 365px;
+      padding: 0;
     }
   }
 
   &--slim {
+    display: none;
+
     @media (min-width: $tablet-width) {
-      margin: 0;
+      display: flex;
       height: 517px;
-      width: 298px;
+      margin: 0;
     }
 
     @media (min-width: $desktop-width) {
-      width: 271px;
+      flex-direction: row-reverse;
     }
   }
 }
