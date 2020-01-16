@@ -415,3 +415,36 @@
 .form__checkbox:checked ~ .form__tick {
   opacity: 1;
 }
+
+.form__mail-svg {
+  width: 18px;
+  height: 14px;
+  margin-left: -30px;
+  fill: $gray-darkest;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 0;
+    left: 550px;
+    bottom: 40px;
+  }
+}
+
+.form__phone-svg {
+  width: 21px;
+  height: 21px;
+  margin-left: -30px;
+  fill: $gray-darkest;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 135px;
+    bottom: 36px;
+  }
+}

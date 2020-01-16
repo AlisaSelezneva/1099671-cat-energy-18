@@ -1,33 +1,8 @@
 .page-footer {
-  position: relative;
   color: $gray;
   background-color: $gray-light;
   padding: 0;
   margin: 0;
-
-  /*&::after {
-    content: "";
-    position: absolute;
-    width: 55px;
-    height: 53px;
-    top: 297px;
-    left: 125px;
-    background-size: cover;
-    background-image: url("../img/map-pin.png");
-    background-repeat: no-repeat;
-
-    @media (min-width: $tablet-width) {
-      width: 113px;
-      height: 106px;
-      top: 352px;
-      left: 325px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 150px;
-      left: 1000px;
-    }
-  }маркер на карте временно убрали*/
 }
 
 .page-footer__copyright {
@@ -67,4 +42,10 @@
   @media (min-width: $tablet-width) {
     align-self: center;
   }
+}
+
+.page-footer__logo-academy {
+  width: 27px;
+  height: 34px;
+  fill: $brownish-gray;
 }
