@@ -30,7 +30,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
+    margin-top: 12px;
     padding-top: 27px;
   }
 }
@@ -56,15 +56,20 @@
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
+    padding-top: 23px;
     color: $gray-darkest;
   }
 
   &--selection {
     border-bottom: $border-gray;
-  }
 
-  @media (min-width: $tablet-width) {
-    border: none;
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 5px;
+    }
   }
 
   &--index {

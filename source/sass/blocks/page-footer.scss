@@ -14,6 +14,11 @@
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 23px;
+    padding-bottom: 35px;
+  }
 }
 
 .page-footer__wrapper {
@@ -28,7 +33,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 67px 56px 38px;
+    padding: 55px 54px 56px 38px;
   }
 }
 
@@ -42,10 +47,15 @@
   @media (min-width: $tablet-width) {
     align-self: center;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 16px;
+    padding-bottom: 29px;
+    padding-left: 2px;
+  }
 }
 
 .page-footer__logo-academy {
-  width: 27px;
-  height: 34px;
+  margin: -1px -21px 0 17px;
   fill: $brownish-gray;
 }

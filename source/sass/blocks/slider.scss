@@ -5,7 +5,7 @@
   @media (min-width: $tablet-width) {
     margin-top: 170px;
     padding: 0;
-    background: linear-gradient(to right, $gray-light 50%, $bg-example 50%);
+    background: linear-gradient(to right, $gray-light 54%, $bg-example 50%);
   }
 
   @media (min-width: $desktop-width) {
@@ -26,7 +26,8 @@
 
   @media (min-width: $desktop-width) {
     display: inline-block;
-    margin-top: -100px;
+    margin-top: -167px;
+    margin-left: 24px;
     width: 100%;
     padding-left: 30px;
   }
@@ -39,7 +40,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 0;
+    top: -16px;
   }
 
   &--fat {
@@ -52,7 +53,8 @@
 
     @media (min-width: $desktop-width) {
       width: 57%;
-      left: -44px;
+      top: -20px;
+      left: -39px;
     }
   }
 
@@ -66,7 +68,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      left: 310px;
+      left: 316px;
       width: 52%;
     }
   }
@@ -89,7 +91,9 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    margin-top: 150px;
+    margin-top: 144px;
+    padding-left: 44px;
+    padding-right: 1px;
   }
 }
 

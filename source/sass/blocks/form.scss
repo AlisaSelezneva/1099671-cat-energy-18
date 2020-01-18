@@ -425,12 +425,6 @@
   @media (min-width: $tablet-width) {
     margin-left: -40px;
   }
-
-  @media (min-width: $desktop-width) {
-    right: 0;
-    left: 550px;
-    bottom: 40px;
-  }
 }
 
 .form__phone-svg {
@@ -441,10 +435,5 @@
 
   @media (min-width: $tablet-width) {
     margin-left: -42px;
-  }
-
-  @media (min-width: $desktop-width) {
-    right: 135px;
-    bottom: 36px;
   }
 }
