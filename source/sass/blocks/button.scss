@@ -1,7 +1,7 @@
 .button {
   display: inline-block;
-  width: 280px;
-  padding: 14px 15px 11px 15px;
+  width: 281px;
+  padding: 10px 12px 11px 7px;
   font-family: "Oswald", sans-serif;
   text-align: center;
   text-transform: uppercase;
@@ -33,12 +33,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 249px;
+    width: 245px;
   }
 
   @media (min-width: $desktop-width) {
     width: 169px;
-    padding-left: 12px;
-    padding-bottom: 16px;
+    padding-left: 9px;
+    padding-bottom: 11px;
   }
 }

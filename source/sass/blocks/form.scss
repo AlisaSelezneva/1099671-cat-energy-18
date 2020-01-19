@@ -41,7 +41,7 @@
 
   @media (min-width: $desktop-width) {
     &::before {
-      top: 40px;
+      top: -4px;
       left: 0;
     }
   }
@@ -61,6 +61,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    width: 625px;
   }
 
   &--main {
@@ -196,6 +197,10 @@
     width: 18px;
     height: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 26px;
+  }
 }
 
 .form__field {
@@ -203,12 +208,12 @@
   align-items: center;
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 20px 0;
+    margin: -4px 0 24px 56px;
   }
 
   &--age {
     @media (min-width: $desktop-width) {
-      margin: 0;
+      margin: -5px 0 24px 55px;
     }
   }
 
@@ -220,14 +225,16 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 486px;
-      margin-top: 0;
+      width: 542px;
+      margin-top: 5px;
+      margin-left: 60px;
     }
   }
 
   &--phone {
     @media (min-width: $desktop-width) {
-      width: 472px;
+      width: 517px;
+      margin-top: 5px;
     }
   }
 }
@@ -250,6 +257,7 @@
 
   @media (min-width: $desktop-width) {
     height: 52px;
+    padding: 17px 18px;
   }
 
   &:hover {
@@ -278,6 +286,12 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 55px;
+    margin-left: 54px;
+    padding: 11px 18px;
+  }
 }
 
 .form__list {
@@ -295,8 +309,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
-    padding-bottom: 43px;
+    margin: -4px -54px 0 16px;
+    padding: 19px 0 36px 12px;
   }
 
   &--checkbox {
@@ -435,5 +449,10 @@
 
   @media (min-width: $tablet-width) {
     margin-left: -42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 4px;
+    margin-right: -36px;
   }
 }

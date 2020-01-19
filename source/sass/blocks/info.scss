@@ -10,23 +10,24 @@
 
 .info__text {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 32px 25px 26px 19px;
+  padding: 28px 23px 13px 19px;
   background-color: $white;
 
   @media (min-width: $tablet-width) {
-    padding: 69px 72px 59px 71px;
+    padding: 69px 72px 58px 71px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     flex-wrap: wrap;
-    top: 126px;
+    top: 95px;
     left: 40px;
     width: 570px;
-    padding-top: 65px;
+    padding-top: 80px;
     padding-right: 90px;
-    padding-bottom: 42px;
+    padding-bottom: 59px;
     padding-left: 76px;
     background-color: $white;
   }
@@ -62,15 +63,15 @@
 }
 
 .info__slogan {
-  margin: 0 19px 0 0;
-  width: 150px;
+  margin: 0 16px 0 0;
+  width: 124px;
   font-family: $additional-font;
   font-size: 16px;
   color: $gray-darken;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: -15px 16px 0 0;
     width: 154px;
     font-size: 20px;
     line-height: 25px;
@@ -84,20 +85,30 @@
 
 .info__adress {
   margin: 0;
+  width: 135px;
 
   @media (min-width: $tablet-width) {
     width: 155px;
+    margin: -17px 0 0 33px;
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
-    width: 202px;
-    margin-top: -2px;
-    padding-left: 47px;
+    width: 205px;
+    margin-top: -76px;
+    padding-left: 33px;
+    margin-left: 216px;
     text-align: left;
   }
 
   &--spb {
+    margin-top: -20px;
+    margin-left: 142px;
+
+    @media (min-width: $tablet-width) {
+      margin: -16px 0 0 499px;
+    }
+
     @media (min-width: $desktop-width) {
       margin-top: -17px;
       margin-left: 250px;
@@ -109,7 +120,7 @@
   padding: 0;
   margin: 0;
   width: 100%;
-  height: 400px;
+  height: 361px;
 
   @media (min-width: $tablet-width) {
     width: 100%;

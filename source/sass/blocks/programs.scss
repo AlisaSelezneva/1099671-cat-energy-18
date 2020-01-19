@@ -19,12 +19,13 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 80px 62px 62px 55px;
+    padding: 77px 62px 62px 55px;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    padding: 41px 56px 62px 53px;
+    margin-top: -15px;
+    padding: 40px 56px 62px 53px;
   }
 
   &:nth-child(odd) {
@@ -36,6 +37,8 @@
   &::before {
     content: "";
     position: absolute;
+    left: 23px;
+    top: 25px;
     width: 50px;
     height: 50px;
     background-image: url("../img/icon-cat-slim.svg");
@@ -45,13 +48,15 @@
     border-radius: 50%;
 
     @media (min-width: $tablet-width) {
-      left: 450px;
+      top: 92px;
+      left: 447px;
       width: 200px;
       height: 200px;
     }
 
     @media (min-width: $desktop-width) {
-      left: 50px;
+      left: 52px;
+      top: 47px;
       width: 100px;
       height: 100px;
     }
@@ -59,6 +64,16 @@
 
   &--pro::before {
     background-image: url("../img/icon-cat-pro.svg");
+
+    @media (min-width: $tablet-width) {
+      top: 90px;
+      left: 448px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 47px;
+      left: 51px;
+    }
   }
 }
 
@@ -76,7 +91,7 @@
 
 .programs__title {
   position: relative;
-  padding: 0 0 0 70px;
+  padding: 9px 0 0 71px;
   margin: 0;
   font-family: $additional-font;
   font-size: 24px;
@@ -96,12 +111,12 @@
 }
 
 .programs__description {
-  margin: 0 0 20px 0;
-  padding: 24px 0 23px 0;
+  margin: 0 0 19px 0;
+  padding: 29px 0 23px 0;
   border-bottom: 1px solid $pinkish-gray;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 23px 61px 0;
+    padding: 24px 23px 38px 0;
     border: none;
     width: 400px;
   }
@@ -111,6 +126,18 @@
     margin: 0;
     width: 470px;
     border: none;
+  }
+
+  &--pro {
+    @media (min-width: $tablet-width) {
+      padding: 23px 60px 38px 0;
+      width: 404px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 73px 48px 36px 0;
+      width: 493px;
+    }
   }
 }
 

@@ -4,6 +4,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding-top: 0;
   }
 }
 
@@ -17,12 +18,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 42px 0 0 -1px;
+    margin: 53px 0 0 -55px;
   }
 }
 
 .page-header__logo-image {
-  width: 141px;
+  width: 191px;
   height: auto;
 
   @media (min-width: $tablet-width) {
@@ -30,6 +31,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 54px;
     width: 203px;
   }
+}
+
+.page-header__mobile {
+  padding-bottom: 14px;
 }

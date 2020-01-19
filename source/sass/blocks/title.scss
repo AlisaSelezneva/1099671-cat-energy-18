@@ -1,3 +1,10 @@
+.title {
+  @media (min-width: $desktop-width) {
+    margin-top: -26px;
+    margin-left: 38px;
+  }
+}
+
 .title__text {
   display: inline-block;
   margin: 0;
@@ -39,11 +46,22 @@
     line-height: 36px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-top: 70px;
+    padding: 0 43px 0 15px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
   &--contacts {
     width: 215px;
 
     @media (min-width: $tablet-width) {
       width: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
     }
   }
 }

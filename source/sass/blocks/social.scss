@@ -15,14 +15,10 @@
 }
 
 .social__item {
-  padding: 22px 20px 21px 20px;
+  padding: 22px 23px 20px 15px;
 
   @media (min-width: $tablet-width) {
-    align-self: center;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 15px 5px 12px 23px;
+    padding: 19px 5px 0 23px;
   }
 }
 
