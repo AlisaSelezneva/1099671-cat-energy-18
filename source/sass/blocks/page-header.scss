@@ -6,6 +6,10 @@
     justify-content: space-between;
     padding-top: 0;
   }
+
+  &--form {
+    padding-top: 14px;
+  }
 }
 
 .page-header__logo {
@@ -37,5 +41,5 @@
 }
 
 .page-header__mobile {
-  padding-bottom: 14px;
+  padding-bottom: 13px;
 }

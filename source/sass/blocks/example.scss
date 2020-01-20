@@ -83,7 +83,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 70px 0 71px 110px;
+    margin: 70px 0 71px 70px;
     width: 436px;
   }
 }
@@ -97,7 +97,7 @@
   @media (min-width: $desktop-width) {
     flex-wrap: wrap;
     flex-direction: column;
-    margin: -1px 0 0 110px;
+    margin: -1px 0 0 70px;
   }
 }
 
@@ -123,7 +123,7 @@
 }
 
 .example__value {
-  padding: 17px 10px 17px 10px;
+  padding: 14px 10px 17px 10px;
   margin: 0;
   width: 124px;
   box-sizing: border-box;
@@ -186,6 +186,8 @@
   }
 
   &--price {
+    margin: 15px 0 0 3px;
+
     @media (min-width: $tablet-width) {
       margin: -14px 0 0 205px;
     }
@@ -213,6 +215,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 1px 0 0 47px;
+    margin: 0 0 0 47px;
   }
 }

@@ -23,7 +23,7 @@
 }
 
 .benefits__subtitle {
-  margin: -15px 0 32px 0;
+  margin: -15px 0 28px 0;
 
   @include subtitle();
 
@@ -39,7 +39,7 @@
 }
 
 .benefits__item {
-  padding: 0 0 27px 80px;
+  padding: 0 0 26px 80px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -53,6 +53,8 @@
   }
 
   &--easy {
+    padding: 0 0 26px 80px;
+
     @media (min-width: $tablet-width) {
       width: 325px;
       padding: 152px 44px 0 1px;
@@ -91,10 +93,10 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
-    width: 61px;
-    height: 57px;
+    width: 60px;
+    height: 60px;
     background-color: $apple;
     background-position: center center;
     background-repeat: no-repeat;
@@ -116,7 +118,6 @@
   }
 
   &--healthy::before {
-    top: 0;
     left: 0;
     background-image: url("../img/advantage-leaf@1x.png");
 
@@ -135,6 +136,7 @@
   }
 
   &--easy::before {
+    left: 0;
     background-image: url("../img/advantage-powder@1x.png");
 
     @media (min-resolution: $retina-dpi),
@@ -154,6 +156,7 @@
   }
 
   &--functional::before {
+    left: 0;
     background-image: url("../img/advantage-dining@1x.png");
 
     @media (min-resolution: $retina-dpi),
@@ -172,6 +175,7 @@
   }
 
   &--change::before {
+    left: 0;
     background-image: url("../img/advantage-clock@1x.png");
 
     @media (min-resolution: $retina-dpi),
@@ -244,7 +248,7 @@
 
   &--change::after {
     @media (min-width: $tablet-width) {
-      top: 46px;
+      top: 33px;
       left: 114px;
       content: "4";
     }

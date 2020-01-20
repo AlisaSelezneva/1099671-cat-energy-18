@@ -5,7 +5,7 @@
 .page-form__title {
   @include subtitle();
   margin: 0;
-  padding: 30px 0 35px 0;
+  padding: 12px 0 25px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
