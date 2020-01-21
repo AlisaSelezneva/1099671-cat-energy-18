@@ -39,6 +39,10 @@
   @media (min-width: $desktop-width) {
     padding: 64px 38px 56px 38px;
   }
+
+  &--form {
+    margin-top: -2px;
+  }
 }
 
 .page-footer__logo {

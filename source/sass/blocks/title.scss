@@ -55,13 +55,36 @@
 
   &--contacts {
     width: 215px;
+    margin: -8px 0 0 -16px;
 
     @media (min-width: $tablet-width) {
       width: auto;
+      margin: -11px 0 5px 25px;
+      padding: 0 41px 0 15px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: 0;
+      margin-top: 5px;
+      margin-left: -54px;
+    }
+  }
+
+  &--comment {
+    margin: -4px 0 0 -16px;
+    padding: 0 19px 0 15px;
+
+    @media (min-width: $tablet-width) {
+      margin: 56px 0 0 -54px;
+    }
+  }
+
+  &--add {
+    margin: -3px 0 0 -16px;
+    padding: 0 19px 0 15px;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 70px;
+      margin-left: -54px;
     }
   }
 }
