@@ -17,6 +17,7 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    padding: 56px 0 27px 0;
     font-size: 20px;
   }
 
@@ -43,7 +44,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      left: 90px;
+      left: 91px;
     }
   }
 }
@@ -59,6 +60,10 @@
     width: 203px;
     font-size: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 103px 30px 0 32px;
+  }
 }
 
 .show-more__text {
@@ -72,6 +77,11 @@
     width: 225px;
     font-size: 16px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 25px 47px 25px;
+    line-height: 1.2;
   }
 }
 

@@ -37,6 +37,16 @@
     padding-right: 0;
     margin-right: 1px;
   }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      padding-top: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 25px;
+    }
+  }
 }
 
 .main-nav__item {
@@ -100,6 +110,28 @@
           top: 56px;
           width: 68px;
           background-color: $white;
+        }
+      }
+
+      &::after {
+        display: none;
+
+        @media (min-width: $tablet-width) {
+          display: block;
+          content: "";
+          position: absolute;
+          height: 2px;
+          width: 61px;
+          left: 36px;
+          top: 40px;
+          background-color: $apple;
+        }
+
+        @media (min-width: $desktop-width) {
+          left: 36px;
+          top: 56px;
+          width: 169px;
+          display: none;
         }
       }
     }

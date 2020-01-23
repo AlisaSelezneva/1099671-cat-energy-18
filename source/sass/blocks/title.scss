@@ -5,6 +5,17 @@
   }
 }
 
+.title__add {
+  @media (min-width: $tablet-width) {
+    margin-top: -109px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -69px;
+    margin-left: -38px;
+  }
+}
+
 .title__text {
   display: inline-block;
   margin: 0;
@@ -17,7 +28,7 @@
   background-color: $white;
 
   @media (min-width: $tablet-width) {
-    padding: 0 37px 75px 37px;
+    padding: 0 37px 59px 37px;
     font-size: 36px;
     line-height: 36px;
   }
