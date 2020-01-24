@@ -2,9 +2,9 @@
   position: relative;
   margin-top: 39px;
   margin-bottom: 35px;
-  padding-top: 89px;
+  padding-top: 123px;
   width: 100%;
-  min-height: 298px;
+  min-height: 288px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -49,8 +49,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 50px;
-    left: 110px;
+    top: 65px;
+    left: 112px;
     width: 56px;
     height: 61px;
     background-image: url("../img/icon-gift.svg");
@@ -70,8 +70,8 @@
 .bonus__text {
   display: inline-block;
   margin: 0;
-  padding: 64px 10px 43px 10px;
-  width: 169px;
+  padding: 64px 10px 43px 13px;
+  width: 195px;
 
   @media (min-width: $tablet-width) {
     text-align: left;

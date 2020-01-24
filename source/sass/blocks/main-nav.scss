@@ -121,8 +121,8 @@
           content: "";
           position: absolute;
           height: 2px;
-          width: 61px;
-          left: 36px;
+          width: 154px;
+          left: 32px;
           top: 40px;
           background-color: $apple;
         }
@@ -162,8 +162,8 @@
   position: absolute;
   width: 25px;
   height: 19px;
-  top: 22px;
-  right: 20px;
+  top: 10px;
+  right: 0;
   background-image: url("../img/icon-mobile-menu.svg");
 
   @media (min-width: $tablet-width) {
