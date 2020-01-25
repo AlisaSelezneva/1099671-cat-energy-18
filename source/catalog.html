@@ -7,6 +7,8 @@
   <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+  <script src="/js/svg4everybody.js"></script>
+  <script>svg4everybody(); // run it now or whenever you are ready</script>
 </head>
 
 <body>
@@ -19,7 +21,7 @@
           <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="141" height="39" alt="Логотип Кэт энерджи»">
         </picture>
       </a>
-      <div class="main-nav--closed">
+      <div class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</button>
       </div>
     </div>
@@ -31,7 +33,7 @@
         <li class="main-nav__item main-nav__item--active">
           <a>Каталог продукции</a>
         </li>
-        <li class="main-nav__item main-nav__item--selection">
+        <li class="main-nav__item">
           <a href="form.html">Подбор программы</a>
         </li>
       </ul>
@@ -43,7 +45,7 @@
       <h2 class="visually-hidden">Основные товары</h2>
       <ul class="production__list">
         <li class="production__item">
-          <div class="image__wrapper">
+          <div class="image">
             <a href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="../img/chicken-small-desktop@1x.webp 1x, ../img/chicken-small-desktop@2x.webp 2x">
@@ -89,7 +91,7 @@
           <a class="production__button button" href="#">Заказать</a>
         </li>
         <li class="production__item">
-          <div class="image__wrapper">
+          <div class="image">
             <a href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="../img/chicken-big-desktop@1x.webp 1x, ../img/chicken-big-desktop@2x.webp 2x">
@@ -135,7 +137,7 @@
           <a class="production__button button" href="#">Заказать</a>
         </li>
         <li class="production__item">
-          <div class="image__wrapper">
+          <div class="image">
             <a href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="../img/fish-small-desktop@1x.webp 1x, ../img/fish-small-desktop@2x.webp 2x">
@@ -181,7 +183,7 @@
           <a class="production__button button" href="#">Заказать</a>
         </li>
         <li class="production__item">
-          <div class="image__wrapper">
+          <div class="image">
             <a href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="../img/fish-big-desktop@1x.webp 1x, ../img/fish-big-desktop@2x.webp 2x">
@@ -227,7 +229,7 @@
           <a class="production__button button" href="#">Заказать</a>
         </li>
         <li class="production__item">
-          <div class="image__wrapper">
+          <div class="image">
             <a href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="../img/buckwheat-small-desktop@1x.webp 1x, ../img/buckwheat-small-desktop@2x.webp 2x">
@@ -273,7 +275,7 @@
           <a class="production__button button" href="#">Заказать</a>
         </li>
         <li class="production__item">
-          <div class="image__wrapper">
+          <div class="image">
             <a href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="../img/buckwheat-big-desktop@1x.webp 1x, ../img/buckwheat-big-desktop@2x.webp 2x">
@@ -319,7 +321,7 @@
           <a class="production__button button" href="#">Заказать</a>
         </li>
         <li class="production__item">
-          <div class="image__wrapper">
+          <div class="image">
             <a href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="../img/rice-small-desktop@1x.webp 1x, ../img/rice-small-desktop@2x.webp 2x">
@@ -421,7 +423,7 @@
       <div class="info__text info__text--catalog">
         <p class="info__slogan">Приглашаем <br>к сотрудничеству дилеров!</p>
         <p class="info__adress">ул. Большая Конюшенная, д. 19/8</p>
-        <p class="info__adress--spb">Санкт-Петербург</p>
+        <p class="info__adress info__adress--spb">Санкт-Петербург</p>
       </div>
     </div>
     <picture>
@@ -430,7 +432,7 @@
       <source type="image/webp" srcset="bg-map-mobile@1x.webp 1x, ../img/bg-map-mobile@2x.webp 2x">
       <source media="(min-width: 1300px)" srcset="../img/bg-map-desktop@1x.png 1x, ../img/bg-map-desktop@2x.png 2x">
       <source media="(min-width: 768px)" srcset="../img/bg-map-tablet@1x.png 1x, ../img/bg-map-tablet@2x.png 2x">
-      <img class="info__map" src="../img/bg-map-mobile@1x.png" srcset="../img/bg-map-mobile@1x.png 1x, ../img/bg-map-mobile@2x.png 2x" alt="Офис компании Кэт энерджи по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      <img class="map" src="../img/bg-map-mobile@1x.png" srcset="../img/bg-map-mobile@1x.png 1x, ../img/bg-map-mobile@2x.png 2x" alt="Офис компании Кэт энерджи по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
     </picture>
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo" href="index.html">

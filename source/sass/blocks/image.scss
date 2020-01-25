@@ -1,7 +1,11 @@
-.image__wrapper {
+.image {
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: flex-end;
     height: 137px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 133px;
   }
 }

@@ -7,6 +7,8 @@
   <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+  <script src="/js/svg4everybody.js"></script>
+  <script>svg4everybody(); // run it now or whenever you are ready</script>
 </head>
 
 <body>
@@ -19,8 +21,8 @@
           <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="141" height="39" alt="Логотип Кэт энерджи»">
         </picture>
       </a>
-      <div class="main-nav--closed">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</button>
+      <div class="main-nav main-nav--closed">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden"></span>Открыть меню</button>
       </div>
     </div>
     <nav class="main-nav main-nav__form">
@@ -32,7 +34,7 @@
           <li class="main-nav__item">
             <a href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item main-nav__item--selection">
+          <li class="main-nav__item main-nav__item--selection main-nav__item--active">
             <a>Подбор программы</a>
           </li>
         </ul>
@@ -45,7 +47,9 @@
         <h1 class="page-form__title">Подбор программы</h1>
         <p class="page-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
       </div>
-      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+    </div>
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="container">
         <div class="form__wrapper">
           <fieldset class="form__group form__group--main">
             <p class="form__field">
@@ -78,13 +82,15 @@
             </ul>
           </fieldset>
         </div>
-    </div>
-    </div>
-    <div class="form-group__wrapper">
+      </div>
+      <div class="form__wrapper-group">
+        <div class="container">
+          <h2 class="title">
+            <span class="title__form title__form--contacts">Контактные данные (владельца кота)</span>
+          </h2>
+        </div>
+      </div>
       <div class="container">
-        <h2 class="title">
-          <span class="title__form title__form--contacts">Контактные данные (владельца кота)</span>
-        </h2>
         <div class="form__wrapper">
           <p class="form__field form__field--email">
             <label class="form__label" for="e-mail-field">E-mail:*</label>
@@ -102,67 +108,65 @@
           </p>
         </div>
       </div>
-      </section>
-    </div>
-    <div class="form-group__wrapper form-group__wrapper--comment">
-      <div class="container">
-        <h2 class="title">
-          <span class="title__form title__form--comment">Комментарий</span>
-        </h2>
-        <textarea class="form__textarea" id="text-field" rows="5" cols="30" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+      <div class="form__wrapper-group form__wrapper-group--comment">
+        <div class="container">
+          <h2 class="title">
+            <span class="title__form title__form--comment">Комментарий</span>
+          </h2>
+          <textarea class="form__textarea" id="text-field" rows="5" cols="30" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
       </div>
-    </div>
-    <div class="form-group__wrapper form-group__wrapper--add">
-      <div class="container">
-        <h2 class="title">
-          <span class="title__form title__form--add">Дополнительно</span>
-        </h2>
-        <ul class="form__list form__list--checkbox">
-          <li class="form__item form__item--checkbox">
-            <input class="form__checkbox" type="checkbox" name="add" value="" id="sugarfree-item" class="visually-hidden form__checkbox" checked>
-            <label for="sugarfree-item" class="form__label form__label--checkbox">
-              Сахарозаменитель
-            </label>
-            <svg class="form__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.1 15.5">
-              <path d="M20.1 0L7.7 13.3 1 6.1 0 7.2l7.6 8.2.1.1L21 1.2l.1-.1z" />
-            </svg>
-          </li>
-          <li class="form__item form__item--checkbox">
-            <input class="visually-hidden form__checkbox" type="checkbox" name="add" value="" id="water-item">
-            <label for="water-item" class="form__label form__label--checkbox">
-              Питьевая вода
-            </label>
-            <svg class="form__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.1 15.5">
-              <path d="M20.1 0L7.7 13.3 1 6.1 0 7.2l7.6 8.2.1.1L21 1.2l.1-.1z" />
-            </svg>
-          </li>
-          <li class="form__item form__item--checkbox">
-            <input type="checkbox" name="add" value="" id="milk-item" class="visually-hidden form__checkbox">
-            <label for="milk-item" class="form__label form__label--checkbox">
-              Молоко
-            </label>
-            <svg class="form__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.1 15.5">
-              <path d="M20.1 0L7.7 13.3 1 6.1 0 7.2l7.6 8.2.1.1L21 1.2l.1-.1z" />
-            </svg>
-          </li>
-          <li class="form__item form__item--checkbox">
-            <input type="checkbox" name="add" value="" id="vitamins-item" class="visually-hidden form__checkbox">
-            <label for="vitamins-item" class="form__label form__label--checkbox">
-              Витамины
-            </label>
-            <svg class="form__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.1 15.5">
-              <path d="M20.1 0L7.7 13.3 1 6.1 0 7.2l7.6 8.2.1.1L21 1.2l.1-.1z" />
-            </svg>
-          </li>
-        </ul>
+      <div class="form__wrapper-group form__wrapper-group--add">
+        <div class="container">
+          <h2 class="title">
+            <span class="title__form title__form--add">Дополнительно</span>
+          </h2>
+          <ul class="form__list form__list--checkbox">
+            <li class="form__item form__item--checkbox">
+              <input type="checkbox" name="add" value="" id="sugarfree-item" class="visually-hidden form__checkbox" checked>
+              <label for="sugarfree-item" class="form__label form__label--checkbox">
+                Сахарозаменитель
+              </label>
+              <svg class="form__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.1 15.5">
+                <path d="M20.1 0L7.7 13.3 1 6.1 0 7.2l7.6 8.2.1.1L21 1.2l.1-.1z" />
+              </svg>
+            </li>
+            <li class="form__item form__item--checkbox">
+              <input class="visually-hidden form__checkbox" type="checkbox" name="add" value="" id="water-item">
+              <label for="water-item" class="form__label form__label--checkbox">
+                Питьевая вода
+              </label>
+              <svg class="form__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.1 15.5">
+                <path d="M20.1 0L7.7 13.3 1 6.1 0 7.2l7.6 8.2.1.1L21 1.2l.1-.1z" />
+              </svg>
+            </li>
+            <li class="form__item form__item--checkbox">
+              <input type="checkbox" name="add" value="" id="milk-item" class="visually-hidden form__checkbox">
+              <label for="milk-item" class="form__label form__label--checkbox">
+                Молоко
+              </label>
+              <svg class="form__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.1 15.5">
+                <path d="M20.1 0L7.7 13.3 1 6.1 0 7.2l7.6 8.2.1.1L21 1.2l.1-.1z" />
+              </svg>
+            </li>
+            <li class="form__item form__item--checkbox">
+              <input type="checkbox" name="add" value="" id="vitamins-item" class="visually-hidden form__checkbox">
+              <label for="vitamins-item" class="form__label form__label--checkbox">
+                Витамины
+              </label>
+              <svg class="form__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.1 15.5">
+                <path d="M20.1 0L7.7 13.3 1 6.1 0 7.2l7.6 8.2.1.1L21 1.2l.1-.1z" />
+              </svg>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="form__secondary">
-      <div class="container">
-        <button class="form__button button" type="submit">Отправить заявку</button>
-        <p class="form__note">* — Обязательные поля</p>
+      <div class="form__secondary">
+        <div class="container">
+          <button class="form__button button" type="submit">Отправить заявку</button>
+          <p class="form__note">* — Обязательные поля</p>
+        </div>
       </div>
-    </div>
     </form>
   </main>
   <footer class="page-footer">
@@ -170,7 +174,7 @@
       <div class="info__text info__text--form">
         <p class="info__slogan">Приглашаем <br>к сотрудничеству дилеров!</p>
         <p class="info__adress">ул. Большая Конюшенная, д. 19/8</p>
-        <p class="info__adress--spb">Санкт-Петербург</p>
+        <p class="info__adress info__adress--spb">Санкт-Петербург</p>
       </div>
     </div>
     <picture>
@@ -179,7 +183,7 @@
       <source type="image/webp" srcset="bg-map-mobile@1x.webp 1x, ../img/bg-map-mobile@2x.webp 2x">
       <source media="(min-width: 1300px)" srcset="../img/bg-map-desktop@1x.png 1x, ../img/bg-map-desktop@2x.png 2x">
       <source media="(min-width: 768px)" srcset="../img/bg-map-tablet@1x.png 1x, ../img/bg-map-tablet@2x.png 2x">
-      <img class="info__map" src="../img/bg-map-mobile@1x.png" srcset="../img/bg-map-mobile@1x.png 1x, ../img/bg-map-mobile@2x.png 2x" alt="Офис компании Кэт энерджи по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      <img class="map" src="../img/bg-map-mobile@1x.png" srcset="../img/bg-map-mobile@1x.png 1x, ../img/bg-map-mobile@2x.png 2x" alt="Офис компании Кэт энерджи по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
     </picture>
     <div class="page-footer__wrapper page-footer__wrapper--form container">
       <a class="page-footer__logo" href="index.html">

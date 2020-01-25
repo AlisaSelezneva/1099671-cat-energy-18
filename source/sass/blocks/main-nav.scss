@@ -106,37 +106,46 @@
         background-color: $apple;
 
         @media (min-width: $tablet-width) {
-          left: 36px;
-          top: 56px;
-          width: 68px;
-          background-color: $white;
-        }
-      }
-
-      &::after {
-        display: none;
-
-        @media (min-width: $tablet-width) {
-          display: block;
-          content: "";
-          position: absolute;
-          height: 2px;
-          width: 154px;
-          left: 32px;
+          left: 34px;
           top: 40px;
-          background-color: $apple;
+          width: 152px;
         }
 
         @media (min-width: $desktop-width) {
-          left: 36px;
+          left: 39px;
           top: 56px;
-          width: 169px;
-          display: none;
+          width: 167px;
         }
       }
     }
   }
+
+  &--active-index {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 36px;
+      top: 39px;
+      width: 62px;
+      height: 2px;
+      background-color: $apple;
+
+      @media (min-width: $tablet-width) {
+        left: 36px;
+        top: 72px;
+        width: 64px;
+      }
+
+      @media (min-width: $desktop-width) {
+        left: 36px;
+        top: 105px;
+        width: 68px;
+        background-color: $white;
+      }
+    }
+  }
 }
+
 
 .main-nav__toggle {
   width: 19px;

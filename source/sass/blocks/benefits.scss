@@ -1,6 +1,6 @@
 .benefits {
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 102px;
@@ -53,7 +53,7 @@
   }
 
   &--easy {
-    padding: 0 0 26px 80px;
+    padding: 0 0 28px 80px;
 
     @media (min-width: $tablet-width) {
       width: 325px;
@@ -67,6 +67,8 @@
   }
 
   &--functional {
+    padding: 0 0 27px 80px;
+
     @media (min-width: $tablet-width) {
       width: 256px;
       padding: 196px 41px 0 1px;
