@@ -119,14 +119,26 @@
 }
 
 .promo__button {
-  z-index: 15;
+  display: inline-block;
+  height: 41px;
+  width: 281px;
+  padding: 11px 9px 8px 7px;
+  font-size: 14px;
+  font-family: $additional-font;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $apple;
+  border-style: none;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 181px;
     left: 0;
-    height: 52px;
-    margin: 25px 0 0 120px;
+    height: 54px;
+    width: 245px;
+    margin: 26px 0 0 119px;
+    padding: 5px 10px 8px 7px;
     font-size: 20px;
     line-height: 20px;
   }

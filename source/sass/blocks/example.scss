@@ -25,7 +25,6 @@
 }
 
 .example__content {
-  margin: 0;
   padding-bottom: 11px;
 
   @media (min-width: $desktop-width) {
@@ -85,7 +84,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 70px 0 71px 70px;
+    margin: 70px 0 71px 0;
     width: 436px;
   }
 }
@@ -99,7 +98,7 @@
   @media (min-width: $desktop-width) {
     flex-wrap: wrap;
     flex-direction: column;
-    margin: -1px 0 0 70px;
+    margin: -1px 0 0 0;
   }
 }
 

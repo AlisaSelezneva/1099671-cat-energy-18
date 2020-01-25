@@ -53,7 +53,7 @@
 
   @media (min-width: $desktop-width) {
     &::before {
-      top: 68px;
+      top: 91px;
       left: 0;
     }
   }
@@ -121,6 +121,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      flex-direction: column;
       width: 618px;
       padding-left: 14px;
       margin-top: 1px;
@@ -297,7 +298,7 @@
 
   &--age {
     @media (min-width: $desktop-width) {
-      margin: -6px 0 24px 57px;
+      margin: -6px 0 1px 57px;
     }
   }
 
@@ -390,6 +391,7 @@
     margin-top: 56px;
     margin-left: 0;
     padding: 10px 18px;
+    width: 100%;
   }
 }
 
@@ -452,6 +454,7 @@
     @media (min-width: $desktop-width) {
       margin: -3px 0 0 -13px;
       padding: 20px 0 37px 36px;
+      width: 100%;
     }
   }
 }

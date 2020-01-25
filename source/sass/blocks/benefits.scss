@@ -49,7 +49,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 184px 52px 48px 0;
-    width: 254px;
+    width: 255px;
   }
 
   &--easy {
@@ -88,7 +88,7 @@
 
     @media (min-width: $desktop-width) {
       width: 246px;
-      padding: 184px 0 0 1px;
+      padding: 184px 0 0 0;
     }
   }
 
@@ -254,5 +254,13 @@
       left: 113px;
       content: "4";
     }
+  }
+}
+
+.benefits__indent {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
