@@ -5,16 +5,17 @@
 .page-form__title {
   @include subtitle();
   margin: 0;
-  padding: 30px 0 35px 0;
+  padding: 12px 0 25px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding: 53px 0 69px 0;
+    padding: 0 0 55px 0;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
+    padding: 55px 0 67px 0;
   }
 }
 
@@ -28,15 +29,15 @@
   color: $gray-darken;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 60px 0;
-    padding-left: 38px;
+    margin: 0 0 65px 0;
+    padding-left: 39px;
     font-size: 20px;
     line-height: 30px;
     width: 362px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 53px 0 0 0;
+    margin: -13px 0 0 0;
     padding-left: 0;
   }
 }
@@ -46,7 +47,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding-top: 53px;
+    padding-top: 38px;
     padding-right: 67px;
   }
 

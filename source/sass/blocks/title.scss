@@ -1,7 +1,31 @@
+.title {
+  @media (min-width: $desktop-width) {
+    margin-top: -26px;
+    margin-left: 38px;
+  }
+}
+
+.title__add {
+  margin-top: 32px;
+  margin-left: -21px;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -74px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -69px;
+    margin-left: -38px;
+  }
+}
+
 .title__text {
   display: inline-block;
   margin: 0;
-  padding: 0 15px 0 20px;
+  padding: 0 22px 0 20px;
   font-family: $additional-font;
   font-size: 24px;
   line-height: 24px;
@@ -10,7 +34,7 @@
   background-color: $white;
 
   @media (min-width: $tablet-width) {
-    padding: 0 37px 75px 37px;
+    padding: 0 37px 81px 37px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -39,11 +63,56 @@
     line-height: 36px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-top: 70px;
+    padding: 0 43px 0 15px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
   &--contacts {
     width: 215px;
+    margin: -8px 0 0 -16px;
 
     @media (min-width: $tablet-width) {
       width: auto;
+      margin: 57px 0 5px 1px;
+      padding: 1px 44px 0 39px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 93px;
+      margin-left: -78px;
+    }
+  }
+
+  &--comment {
+    margin: -4px 0 0 -16px;
+    padding: 0 19px 0 15px;
+
+    @media (min-width: $tablet-width) {
+      margin: 29px 0 0 2px;
+      padding: 0 40px 0 37px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 56px 0 0 -78px;
+      padding: 0 40px 0 39px;
+    }
+  }
+
+  &--add {
+    margin: -3px 0 0 -16px;
+    padding: 0 19px 0 15px;
+
+    @media (min-width: $tablet-width) {
+      margin: 24px 0 0 1px;
+      padding: 2px 41px 0 39px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 76px;
+      margin-left: -79px;
     }
   }
 }

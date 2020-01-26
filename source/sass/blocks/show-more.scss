@@ -1,6 +1,6 @@
 .show-more {
   position: relative;
-  padding: 27px 0 25px 0;
+  padding: 25px 0 18px 0;
   margin: 0;
   text-align: center;
   border-bottom: $border-gray;
@@ -17,6 +17,7 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    padding: 56px 0 27px 0;
     font-size: 20px;
   }
 
@@ -24,8 +25,8 @@
     content: "";
     position: absolute;
     padding: 0;
-    top: 30px;
-    left: 120px;
+    top: 26px;
+    left: 125px;
     width: 30px;
     height: 30px;
     opacity: 0.2;
@@ -35,43 +36,52 @@
     background-size: cover;
 
     @media (min-width: $tablet-width) {
-      top: 50px;
-      left: 130px;
+      top: 55px;
+      left: 132px;
       width: 61px;
       height: 61px;
       background-image: url("../../img/icon-plus.svg");
     }
 
     @media (min-width: $desktop-width) {
-      left: 90px;
+      left: 91px;
     }
   }
 }
 
 .show-more__title {
   @include subtitle-production();
-  padding: 55px 30px 0 32px;
+  padding: 55px 30px 0 39px;
   margin: 0;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 95px 30px 0 32px;
+    padding: 108px 30px 0 32px;
     width: 203px;
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 103px 30px 0 32px;
   }
 }
 
 .show-more__text {
   font-size: 12px;
   line-height: 16px;
-  padding: 11px 25px 22px 25px;
+  padding: 8px 25px 22px 30px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 0 25px 85px 25px;
+    padding: 0 25px 44px 25px;
     width: 225px;
     font-size: 16px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 25px 47px 25px;
+    line-height: 1.2;
   }
 }
 

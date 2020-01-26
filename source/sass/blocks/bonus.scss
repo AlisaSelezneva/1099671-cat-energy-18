@@ -1,8 +1,10 @@
 .bonus {
+  position: relative;
   margin-top: 39px;
   margin-bottom: 35px;
+  padding-top: 123px;
   width: 100%;
-  min-height: 298px;
+  min-height: 288px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -19,11 +21,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: auto;
+    min-height: 200px;
     margin-top: 69px;
-    margin-bottom: 76px;
-    padding-top: 75px;
-    padding-bottom: 69px;
+    margin-bottom: 78px;
+    padding-top: 0;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi),
@@ -34,8 +35,9 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    height: 290px;
     margin: 0;
-    padding: 65px 43px 43px 43px;
+    padding: 0 43px 0 43px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
 
     @media (min-resolution: $retina-dpi),
@@ -43,19 +45,47 @@
       background-image: url("../img/gift-photo-desktop@2x.jpg");
     }
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 112px;
+    width: 56px;
+    height: 61px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 65px;
+      left: 91px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 96px;
+    }
+  }
 }
 
 .bonus__text {
   display: inline-block;
   margin: 0;
-  padding: 64px 10px 43px 10px;
-  width: 169px;
+  padding: 64px 10px 43px 13px;
+  width: 195px;
 
   @media (min-width: $tablet-width) {
     text-align: left;
+    padding: 72px 0 36px 90px;
+    margin-left: 217px;
+    margin-right: -6px;
+    width: 265px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: center;
+    margin-left: -1px;
+    margin-right: 17px;
+    padding: 189px 53px 33px 0;
+    width: 216px;
   }
 }

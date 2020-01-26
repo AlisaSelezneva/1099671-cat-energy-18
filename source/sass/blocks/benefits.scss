@@ -1,9 +1,9 @@
 .benefits {
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 58px;
+    padding-bottom: 102px;
     border-bottom: $border-gray;
   }
 
@@ -20,42 +20,82 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
-  @media (min-width: $desktop-width) {
-    justify-content: flex-start;
-  }
 }
 
 .benefits__subtitle {
-  margin: 0 0 35px 0;
+  margin: -15px 0 28px 0;
 
   @include subtitle();
 
   @media (min-width: $tablet-width) {
     @include subtitle-tablet();
 
-    margin: 0;
+    margin: -7px 0 32px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: -6px 0 0 0;
   }
 }
 
 .benefits__item {
-  padding: 0 0 32px 80px;
+  padding: 0 0 26px 80px;
   position: relative;
 
   @media (min-width: $tablet-width) {
     width: 260px;
-    padding: 197px 0 48px 0;
+    padding: 152px 0 48px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 197px 80px 48px 0;
-    width: 305px;
+    padding: 184px 52px 48px 0;
+    width: 255px;
+  }
+
+  &--easy {
+    padding: 0 0 28px 80px;
+
+    @media (min-width: $tablet-width) {
+      width: 325px;
+      padding: 152px 44px 0 1px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 253px;
+      padding: 184px 30px 0 1px;
+    }
+  }
+
+  &--functional {
+    padding: 0 0 27px 80px;
+
+    @media (min-width: $tablet-width) {
+      width: 256px;
+      padding: 196px 41px 0 1px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 256px;
+      padding: 184px 41px 0 1px;
+    }
+  }
+
+  &--change {
+    @media (min-width: $tablet-width) {
+      width: 324px;
+      padding: 197px 14px 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 246px;
+      padding: 184px 0 0 0;
+    }
   }
 
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     width: 60px;
     height: 60px;
@@ -70,41 +110,88 @@
       width: 80px;
       height: 80px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 72px;
+      left: 0;
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--healthy::before {
+    left: 0;
     background-image: url("../img/advantage-leaf@1x.png");
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
       background-image: url("../img/advantage-leaf@2x.png");
     }
+
+    @media (min-width: $tablet-width) {
+      top: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 72px;
+    }
   }
 
   &--easy::before {
+    left: 0;
     background-image: url("../img/advantage-powder@1x.png");
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
       background-image: url("../img/advantage-powder@2x.png");
     }
+
+    @media (min-width: $tablet-width) {
+      top: 40px;
+      left: 1px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 72px;
+      left: 1px;
+    }
   }
 
   &--functional::before {
+    left: 0;
     background-image: url("../img/advantage-dining@1x.png");
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
       background-image: url("../img/advantage-dining@2x.png");
     }
+
+    @media (min-width: $tablet-width) {
+      top: 85px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 2px;
+      top: 72px;
+    }
   }
 
   &--change::before {
+    left: 0;
     background-image: url("../img/advantage-clock@1x.png");
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
       background-image: url("../img/advantage-clock@2x.png");
+    }
+
+    @media (min-width: $tablet-width) {
+      top: 86px;
+      left: 1px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 72px;
     }
   }
 
@@ -115,8 +202,8 @@
     @media (min-width: $tablet-width) {
       display: block;
       position: absolute;
-      top: 40px;
-      left: 120px;
+      top: 33px;
+      left: 118px;
       font-family: $additional-font;
       font-size: 281px;
       line-height: 281px;
@@ -128,24 +215,52 @@
   &--healthy::after {
     @media (min-width: $tablet-width) {
       content: "1";
+      top: 1px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 33px;
     }
   }
 
   &--easy::after {
     @media (min-width: $tablet-width) {
       content: "2";
+      top: 1px;
+      left: 112px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 33px;
     }
   }
 
   &--functional::after {
     @media (min-width: $tablet-width) {
       content: "3";
+      top: 45px;
+      left: 114px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 116px;
+      top: 33px;
     }
   }
 
   &--change::after {
     @media (min-width: $tablet-width) {
+      top: 49px;
+      left: 113px;
       content: "4";
     }
+  }
+}
+
+.benefits__indent {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }

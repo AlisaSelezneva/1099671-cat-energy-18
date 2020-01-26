@@ -1,4 +1,6 @@
 .main-nav {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: flex;
   }
@@ -28,8 +30,21 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
-    padding-top: 27px;
+    margin-top: 25px;
+    padding-top: 25px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 1px;
+  }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      padding-top: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 25px;
+    }
   }
 }
 
@@ -42,27 +57,31 @@
   text-transform: uppercase;
   text-align: center;
   border-top: $border-gray;
+  color: $gray-darken;
 
   @media (min-width: $tablet-width) {
-    padding: 23px 36px 0 0;
+    padding: 8px 0 0 35px;
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
-    color: $gray-darkest;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
-    color: $gray-darkest;
+    padding-top: 23px;
   }
 
   &--selection {
     border-bottom: $border-gray;
-  }
 
-  @media (min-width: $tablet-width) {
-    border: none;
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 33px;
+    }
   }
 
   &--index {
@@ -70,10 +89,104 @@
       color: $white;
     }
   }
+
+  &--active {
+    @media (min-width: $tablet-width) {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 36px;
+        top: 39px;
+        width: 62px;
+        height: 2px;
+        background-color: $apple;
+
+        @media (min-width: $tablet-width) {
+          left: 34px;
+          top: 40px;
+          width: 152px;
+        }
+
+        @media (min-width: $desktop-width) {
+          left: 39px;
+          top: 56px;
+          width: 167px;
+        }
+      }
+    }
+  }
+
+  &--active-index {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 36px;
+      top: 39px;
+      width: 62px;
+      height: 2px;
+      background-color: $apple;
+      display: none;
+
+      @media (min-width: $tablet-width) {
+        display: block;
+        left: 36px;
+        top: 72px;
+        width: 64px;
+      }
+
+      @media (min-width: $desktop-width) {
+        left: 36px;
+        top: 105px;
+        width: 68px;
+        background-color: $white;
+      }
+    }
+  }
 }
 
+
 .main-nav__toggle {
+  width: 19px;
+  height: 19px;
+  display: none;
+  border: none;
+  background: none;
+
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background-image: url("../img/icon-close.svg");
+  background-size: 19px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.main-nav--closed {
+  display: none;
+  position: absolute;
+  width: 25px;
+  height: 19px;
+  top: 10px;
+  right: 0;
+  background-image: url("../img/icon-mobile-menu.svg");
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__link {
+  color: $gray-darken;
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: $white;
+    }
   }
 }

@@ -1,8 +1,8 @@
 .button {
   display: inline-block;
-  width: 280px;
-  padding: 14px 15px 11px 15px;
-  font-family: "Oswald", sans-serif;
+  width: 281px;
+  padding: 10px 12px 11px 7px;
+  font-family: $additional-font;
   text-align: center;
   text-transform: uppercase;
   color: $white;
@@ -21,6 +21,7 @@
   &_gray {
     color: $gray;
     background-color: $gray-light;
+    padding: 10px 12px 9px 13px;
 
     &:hover,
     &:focus {
@@ -30,13 +31,19 @@
     &:active {
       color: $gray-30;
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 11px 8px 16px 7px;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    width: 249px;
+    width: 245px;
   }
 
   @media (min-width: $desktop-width) {
     width: 169px;
+    padding-left: 9px;
+    padding-bottom: 11px;
   }
 }
