@@ -1,6 +1,5 @@
 .main-nav {
   position: relative;
-  display: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -87,6 +86,8 @@
   }
 
   &--index {
+    color: $gray-darken;
+
     @media (min-width: $desktop-width) {
       color: $white;
     }
@@ -129,8 +130,10 @@
       width: 62px;
       height: 2px;
       background-color: $apple;
+      display: none;
 
       @media (min-width: $tablet-width) {
+        display: block;
         left: 36px;
         top: 72px;
         width: 64px;
@@ -168,6 +171,7 @@
 }
 
 .main-nav--closed {
+  display: none;
   position: absolute;
   width: 25px;
   height: 19px;
