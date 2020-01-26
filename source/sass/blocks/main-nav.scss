@@ -57,20 +57,19 @@
   text-transform: uppercase;
   text-align: center;
   border-top: $border-gray;
+  color: $gray-darken;
 
   @media (min-width: $tablet-width) {
     padding: 8px 0 0 35px;
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
-    color: $gray-darkest;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     padding-top: 23px;
-    color: $gray-darkest;
   }
 
   &--selection {
@@ -86,8 +85,6 @@
   }
 
   &--index {
-    color: $gray-darken;
-
     @media (min-width: $desktop-width) {
       color: $white;
     }
@@ -181,5 +178,15 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.main-nav__link {
+  color: $gray-darken;
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: $white;
+    }
   }
 }
