@@ -103,6 +103,8 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
+  "images",
+  "webp",
   "sprite",
   "html"
 ));
